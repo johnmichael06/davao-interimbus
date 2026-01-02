@@ -1,0 +1,866 @@
+{
+  "id": "019b4a3c-ce47-782c-9ec8-222e0249fbdb",
+  "route_number": "R503",
+  "name": "Bangkal to Roxas",
+  "area": "Bangkal",
+  "time_period": "PM",
+  "color": "#e8cb14",
+  "start_time": "16:00",
+  "end_time": "21:00",
+  "points": [
+    {
+      "id": "019b54ee-66ad-7f4b-9463-840c260b73ff",
+      "name": "Davao Light (C. Bangoy Street) Station",
+      "latitude": 7.072765836687623,
+      "longitude": 125.61067755688578,
+      "kind": "stop"
+    },
+    {
+      "id": "bf2113ce-4c68-4b0a-a092-9462659fd430",
+      "name": "",
+      "latitude": 7.071447730587795,
+      "longitude": 125.61038445540184,
+      "kind": "waypoint"
+    },
+    {
+      "id": "1bc5ceb3-7e52-4e33-9a2f-0d2b29776009",
+      "name": "",
+      "latitude": 7.070143535500362,
+      "longitude": 125.61003714417318,
+      "kind": "waypoint"
+    },
+    {
+      "id": "4da47291-bb2e-43ac-9776-ccc980f0290a",
+      "name": "",
+      "latitude": 7.068842707911693,
+      "longitude": 125.60967756129189,
+      "kind": "waypoint"
+    },
+    {
+      "id": "08f1b385-bd95-4e8c-b531-69b3d05f59d7",
+      "name": "",
+      "latitude": 7.067541479563279,
+      "longitude": 125.6093201205759,
+      "kind": "waypoint"
+    },
+    {
+      "id": "8f25578e-94eb-407d-b43c-538842d9024f",
+      "name": "",
+      "latitude": 7.066261114867374,
+      "longitude": 125.60890015963967,
+      "kind": "waypoint"
+    },
+    {
+      "id": "57668bb3-9ca7-4b54-9e39-e4ca07609ab6",
+      "name": "",
+      "latitude": 7.065256005769615,
+      "longitude": 125.60823399264966,
+      "kind": "waypoint"
+    },
+    {
+      "id": "019b54ee-66ae-7f84-8c7a-ed8de27dbe8e",
+      "name": "San Pedro Street Station",
+      "latitude": 7.0656784289,
+      "longitude": 125.6077419157059,
+      "kind": "stop"
+    },
+    {
+      "id": "1b577209-98e1-4270-ad0c-fc2102451fcb",
+      "name": "",
+      "latitude": 7.066474973570265,
+      "longitude": 125.60664453435865,
+      "kind": "waypoint"
+    },
+    {
+      "id": "4e5425bc-3898-4bdc-b4d3-7a20cea15ded",
+      "name": "",
+      "latitude": 7.067304990347788,
+      "longitude": 125.60557301223763,
+      "kind": "waypoint"
+    },
+    {
+      "id": "f4ab9a16-55c0-402d-bb67-b378ac77e9bd",
+      "name": "",
+      "latitude": 7.068137531100604,
+      "longitude": 125.60450345993345,
+      "kind": "waypoint"
+    },
+    {
+      "id": "53ed8bb5-e68b-4bb2-ab7b-99e4a5a21900",
+      "name": "",
+      "latitude": 7.068870172638319,
+      "longitude": 125.60342919835041,
+      "kind": "waypoint"
+    },
+    {
+      "id": "21fce4aa-64b3-4159-b1f1-f073528f2da6",
+      "name": "",
+      "latitude": 7.067972454440085,
+      "longitude": 125.60241680280205,
+      "kind": "waypoint"
+    },
+    {
+      "id": "ac97238c-455f-4083-93ee-aa078d2c36dd",
+      "name": "",
+      "latitude": 7.06672554942487,
+      "longitude": 125.60192313186197,
+      "kind": "waypoint"
+    },
+    {
+      "id": "5ffeb3a1-468a-43f6-9d41-93b00885da24",
+      "name": "",
+      "latitude": 7.065403060406773,
+      "longitude": 125.60165551201271,
+      "kind": "waypoint"
+    },
+    {
+      "id": "2bf87b8e-71cc-4606-ad39-793c42a707b6",
+      "name": "",
+      "latitude": 7.064139782081624,
+      "longitude": 125.60123384075196,
+      "kind": "waypoint"
+    },
+    {
+      "id": "de7e5b2d-5958-418d-80c0-1c74635f7c96",
+      "name": "",
+      "latitude": 7.0635240457191895,
+      "longitude": 125.60006169267373,
+      "kind": "waypoint"
+    },
+    {
+      "id": "a4273f5a-17de-46b2-8af4-39187f170043",
+      "name": "",
+      "latitude": 7.063211120288876,
+      "longitude": 125.59873949318438,
+      "kind": "waypoint"
+    },
+    {
+      "id": "019b54ee-66af-70a0-b961-2ba9c86a4a47",
+      "name": "UM Matina Station",
+      "latitude": 7.063223650419204,
+      "longitude": 125.59864732887877,
+      "kind": "stop"
+    },
+    {
+      "id": "e2161e95-0ae8-498e-9ae8-0fe5794bf731",
+      "name": "",
+      "latitude": 7.062875953638614,
+      "longitude": 125.59733330461987,
+      "kind": "waypoint"
+    },
+    {
+      "id": "31866cc0-91e9-47cd-8585-4121a657fdc9",
+      "name": "",
+      "latitude": 7.062564924405642,
+      "longitude": 125.59601067365362,
+      "kind": "waypoint"
+    },
+    {
+      "id": "e1d5277a-3d7c-4dd6-995a-450f4bbbb0da",
+      "name": "",
+      "latitude": 7.062253996688197,
+      "longitude": 125.59468798612197,
+      "kind": "waypoint"
+    },
+    {
+      "id": "362e0a1f-05e5-41fb-aa79-f86996c8d4e6",
+      "name": "",
+      "latitude": 7.061935057154534,
+      "longitude": 125.59336723393484,
+      "kind": "waypoint"
+    },
+    {
+      "id": "f8855b84-8062-49c5-85a3-2dfebd9c44b5",
+      "name": "",
+      "latitude": 7.06161797530665,
+      "longitude": 125.59204602825677,
+      "kind": "waypoint"
+    },
+    {
+      "id": "019b54ee-66b0-7d7f-9221-7905d47764ad",
+      "name": "Alorica Davao Station",
+      "latitude": 7.0615768829222105,
+      "longitude": 125.59156268959782,
+      "kind": "stop"
+    },
+    {
+      "id": "9e147fc9-056d-41bc-986c-7a6a1246bbf3",
+      "name": "",
+      "latitude": 7.061190630890425,
+      "longitude": 125.5902599527434,
+      "kind": "waypoint"
+    },
+    {
+      "id": "067115b2-00fb-49e8-8bd2-85a293ab1ad9",
+      "name": "",
+      "latitude": 7.060883111137262,
+      "longitude": 125.58893646513002,
+      "kind": "waypoint"
+    },
+    {
+      "id": "1ba0ddcc-c04e-4c19-a65f-ec8ead5e328f",
+      "name": "",
+      "latitude": 7.06056948479401,
+      "longitude": 125.58761443435463,
+      "kind": "waypoint"
+    },
+    {
+      "id": "3b06e509-c115-41f0-9f88-d7df369c55d4",
+      "name": "",
+      "latitude": 7.060257037614832,
+      "longitude": 125.58629215762406,
+      "kind": "waypoint"
+    },
+    {
+      "id": "0ef3cdf3-bc9b-424a-98c1-171289170ef8",
+      "name": "",
+      "latitude": 7.059943911030677,
+      "longitude": 125.5849700080935,
+      "kind": "waypoint"
+    },
+    {
+      "id": "694c6ade-c119-4771-92fc-2bb435d4758f",
+      "name": "",
+      "latitude": 7.059630978775491,
+      "longitude": 125.58364783406293,
+      "kind": "waypoint"
+    },
+    {
+      "id": "015d6dcf-651a-40f3-9979-96df622dee39",
+      "name": "",
+      "latitude": 7.059515998916092,
+      "longitude": 125.58229399249603,
+      "kind": "waypoint"
+    },
+    {
+      "id": "b344f028-9502-432e-8df2-8edd7f8123bd",
+      "name": "",
+      "latitude": 7.059006923798615,
+      "longitude": 125.58104889331806,
+      "kind": "waypoint"
+    },
+    {
+      "id": "cee234bb-57fd-4347-971d-b13031167054",
+      "name": "",
+      "latitude": 7.058187450817213,
+      "longitude": 125.5799694366384,
+      "kind": "waypoint"
+    },
+    {
+      "id": "019b54ee-66b1-7c97-9aa9-7d2766d279ea",
+      "name": "Shrine Hills Matina Station",
+      "latitude": 7.05778664920966,
+      "longitude": 125.57937306976874,
+      "kind": "stop"
+    },
+    {
+      "id": "924730e5-3282-47c2-bd42-007b6d26a49a",
+      "name": "",
+      "latitude": 7.056889545959947,
+      "longitude": 125.57837105879561,
+      "kind": "waypoint"
+    },
+    {
+      "id": "453959b5-1435-4a0d-8144-3768bd3c560d",
+      "name": "",
+      "latitude": 7.0561081180094805,
+      "longitude": 125.57728115221512,
+      "kind": "waypoint"
+    },
+    {
+      "id": "019b54ee-66b2-7a4c-a087-537e58c37c71",
+      "name": "Kawayan Drive Station",
+      "latitude": 7.055741148671061,
+      "longitude": 125.57639590916756,
+      "kind": "stop"
+    },
+    {
+      "id": "0bbec205-ad12-4f49-a730-7ec9db2fe81e",
+      "name": "",
+      "latitude": 7.0560559478656195,
+      "longitude": 125.57512698056303,
+      "kind": "waypoint"
+    },
+    {
+      "id": "30b8ef12-5f10-4959-b175-d841f372fc06",
+      "name": "",
+      "latitude": 7.056590084573404,
+      "longitude": 125.57387880107383,
+      "kind": "waypoint"
+    },
+    {
+      "id": "5cb4d7d2-4c4d-49f8-99da-c421433f907c",
+      "name": "",
+      "latitude": 7.057124587558711,
+      "longitude": 125.57263079528526,
+      "kind": "waypoint"
+    },
+    {
+      "id": "f2cce995-ceb0-44cd-8d55-e964a1b52658",
+      "name": "",
+      "latitude": 7.057659933445907,
+      "longitude": 125.57138315421071,
+      "kind": "waypoint"
+    },
+    {
+      "id": "60806c8c-f68b-44a1-875c-28477c11fc5a",
+      "name": "",
+      "latitude": 7.058193596549789,
+      "longitude": 125.57013477426388,
+      "kind": "waypoint"
+    },
+    {
+      "id": "abe507bb-c4d3-429b-b884-51247b5fec98",
+      "name": "",
+      "latitude": 7.058728103115765,
+      "longitude": 125.56888675546833,
+      "kind": "waypoint"
+    },
+    {
+      "id": "019b54ee-66b3-7a2c-9ef3-174176d1b614",
+      "name": "Matina Crossing Station",
+      "latitude": 7.059119694383455,
+      "longitude": 125.56804719424792,
+      "kind": "stop"
+    },
+    {
+      "id": "f2c8428a-262b-4511-8c8f-c4e5eec5cf56",
+      "name": "",
+      "latitude": 7.059592422670195,
+      "longitude": 125.56678749781484,
+      "kind": "waypoint"
+    },
+    {
+      "id": "20ec9b7d-ebf4-43d2-b1bc-5bb50cfca3b6",
+      "name": "",
+      "latitude": 7.060121878383484,
+      "longitude": 125.56553728605576,
+      "kind": "waypoint"
+    },
+    {
+      "id": "48218293-710d-4a8e-a82a-8e2e3c74834e",
+      "name": "",
+      "latitude": 7.060651025214972,
+      "longitude": 125.5642869402045,
+      "kind": "waypoint"
+    },
+    {
+      "id": "019b54ee-66b4-7ba7-b70c-a68a96985528",
+      "name": "Tahimik Avenue Matina Station",
+      "latitude": 7.0609816636522,
+      "longitude": 125.5637230487032,
+      "kind": "stop"
+    },
+    {
+      "id": "008780c2-bbe8-41b9-bb06-21787145edbc",
+      "name": "",
+      "latitude": 7.061463445760192,
+      "longitude": 125.56245093017553,
+      "kind": "waypoint"
+    },
+    {
+      "id": "e3ebdd5f-a57a-4fa2-bc08-d57e70064ae0",
+      "name": "",
+      "latitude": 7.061605053129651,
+      "longitude": 125.56113532409087,
+      "kind": "waypoint"
+    },
+    {
+      "id": "9802f318-5ac1-4c84-afa7-f823d40c6745",
+      "name": "",
+      "latitude": 7.061384232041338,
+      "longitude": 125.55979437376811,
+      "kind": "waypoint"
+    },
+    {
+      "id": "019b54ee-66b5-7dd4-a9ee-c5e9cdcd4735",
+      "name": "SPED Bangkal Station",
+      "latitude": 7.061422488598026,
+      "longitude": 125.55969857564492,
+      "kind": "stop"
+    },
+    {
+      "id": "94ab5667-4185-4daf-bc65-b2daa2118f87",
+      "name": "",
+      "latitude": 7.061152052125908,
+      "longitude": 125.55836658230267,
+      "kind": "waypoint"
+    },
+    {
+      "id": "aef0c8cc-f9d9-4dce-8ba9-b0b8fe11b8a2",
+      "name": "",
+      "latitude": 7.0609319236038806,
+      "longitude": 125.55702553207377,
+      "kind": "waypoint"
+    },
+    {
+      "id": "a5cd3445-ecd4-4bad-b2a1-d8f35de22c2c",
+      "name": "",
+      "latitude": 7.0607085150640465,
+      "longitude": 125.5556850211077,
+      "kind": "waypoint"
+    },
+    {
+      "id": "019b54ee-66b6-7488-b4c8-5cf3e376b6d0",
+      "name": "Shell Bangkal Station",
+      "latitude": 7.060689319708203,
+      "longitude": 125.55521061655963,
+      "kind": "stop"
+    },
+    {
+      "id": "aa9a12a0-b17d-4d9b-a18b-c7dba3ccc3e4",
+      "name": "",
+      "latitude": 7.061304845700031,
+      "longitude": 125.55451302805453,
+      "kind": "waypoint"
+    },
+    {
+      "id": "9f51e34d-c168-4c0f-bb3d-16f847072a8d",
+      "name": "",
+      "latitude": 7.0610979618085015,
+      "longitude": 125.55401797921222,
+      "kind": "waypoint"
+    },
+    {
+      "id": "019b54ee-66b7-7a94-8582-53f240966e21",
+      "name": "Hope Avenue Bangkal Station",
+      "latitude": 7.060941181744724,
+      "longitude": 125.55389545175399,
+      "kind": "stop"
+    },
+    {
+      "id": "2c567692-379a-4177-a0e7-0cb466098b4e",
+      "name": "",
+      "latitude": 7.060493437934944,
+      "longitude": 125.55441166221912,
+      "kind": "waypoint"
+    },
+    {
+      "id": "ef8fe914-9223-466c-83cf-5fbcc2d02388",
+      "name": "",
+      "latitude": 7.0607199381529435,
+      "longitude": 125.5557516323536,
+      "kind": "waypoint"
+    },
+    {
+      "id": "019b54ee-66b8-7087-adc1-756283eb22a4",
+      "name": "Ateneo Senior High Station",
+      "latitude": 7.060700779168272,
+      "longitude": 125.5567978228379,
+      "kind": "stop"
+    },
+    {
+      "id": "e1e58194-9862-45fc-8e14-7c26a2207d49",
+      "name": "",
+      "latitude": 7.0611100222786,
+      "longitude": 125.55810274258303,
+      "kind": "waypoint"
+    },
+    {
+      "id": "86647ed6-9dac-4d95-b5bf-8ae424141faa",
+      "name": "",
+      "latitude": 7.061327049024286,
+      "longitude": 125.55944430279706,
+      "kind": "waypoint"
+    },
+    {
+      "id": "019b54ee-66b9-7098-921c-4073ac421e20",
+      "name": "SPED Bangkal Station",
+      "latitude": 7.061255258672034,
+      "longitude": 125.55956428731429,
+      "kind": "stop"
+    },
+    {
+      "id": "98e6f4b9-01bf-4154-8588-4d57a5e06ebc",
+      "name": "",
+      "latitude": 7.061564334854956,
+      "longitude": 125.56089003145341,
+      "kind": "waypoint"
+    },
+    {
+      "id": "931bdbd2-1b9f-46bd-a598-2a14848ef28e",
+      "name": "",
+      "latitude": 7.061559124575106,
+      "longitude": 125.56222168641439,
+      "kind": "waypoint"
+    },
+    {
+      "id": "661fd029-bbf6-4e13-b7e5-3946265ce08b",
+      "name": "",
+      "latitude": 7.061012164283512,
+      "longitude": 125.563464154618,
+      "kind": "waypoint"
+    },
+    {
+      "id": "019b54ee-66ba-7f70-b010-b6f6c327d96c",
+      "name": "Tahimik Avenue Matina Station",
+      "latitude": 7.060840717374191,
+      "longitude": 125.56367702832335,
+      "kind": "stop"
+    },
+    {
+      "id": "3894e425-0542-4fc6-bfc4-86a263a43239",
+      "name": "",
+      "latitude": 7.060369082106027,
+      "longitude": 125.56495380529142,
+      "kind": "waypoint"
+    },
+    {
+      "id": "1b4ec1fd-2065-4f60-b26a-90486164aee7",
+      "name": "",
+      "latitude": 7.059839090073988,
+      "longitude": 125.56620378813584,
+      "kind": "waypoint"
+    },
+    {
+      "id": "ab921c2f-fb06-4b5e-b7c8-bd7a9f91e967",
+      "name": "",
+      "latitude": 7.059260523800062,
+      "longitude": 125.56742344401958,
+      "kind": "waypoint"
+    },
+    {
+      "id": "928b060f-b5cb-4d91-83a9-88f5896950f6",
+      "name": "",
+      "latitude": 7.058722987640443,
+      "longitude": 125.56867002906166,
+      "kind": "waypoint"
+    },
+    {
+      "id": "019b54ee-66bb-749f-a13a-c48d04542f66",
+      "name": "Matina Crossing Station",
+      "latitude": 7.058172424027731,
+      "longitude": 125.56975900724251,
+      "kind": "stop"
+    },
+    {
+      "id": "32d8df67-0c1c-4eb9-8fda-7b97b7cc335c",
+      "name": "",
+      "latitude": 7.057706385490803,
+      "longitude": 125.57103643385479,
+      "kind": "waypoint"
+    },
+    {
+      "id": "9b77cd14-c50d-4d1d-bf97-80ecd4e96d9b",
+      "name": "",
+      "latitude": 7.057170131578869,
+      "longitude": 125.57228369298264,
+      "kind": "waypoint"
+    },
+    {
+      "id": "bd9f0b9d-9968-4ad8-be4c-08a4a4b2f5e3",
+      "name": "",
+      "latitude": 7.056633812480528,
+      "longitude": 125.57353088801689,
+      "kind": "waypoint"
+    },
+    {
+      "id": "142a2ce1-4dcc-4cf0-b303-63344aaf8b03",
+      "name": "",
+      "latitude": 7.0560982414654285,
+      "longitude": 125.57477843993436,
+      "kind": "waypoint"
+    },
+    {
+      "id": "019b54ee-66bc-744f-857b-616fea6d76af",
+      "name": "Kawayan Drive Station",
+      "latitude": 7.055763967087287,
+      "longitude": 125.57540976367454,
+      "kind": "stop"
+    },
+    {
+      "id": "80a9e9ce-eed9-4e28-a9ca-2057cf1711ce",
+      "name": "",
+      "latitude": 7.055621943235579,
+      "longitude": 125.57673632083728,
+      "kind": "waypoint"
+    },
+    {
+      "id": "b1579042-a6bf-4ff6-949c-9ab36619f9b0",
+      "name": "",
+      "latitude": 7.056440777876656,
+      "longitude": 125.57779271206233,
+      "kind": "waypoint"
+    },
+    {
+      "id": "cb1b37bf-c0d0-48ec-b6c1-dd22b6e3ce74",
+      "name": "",
+      "latitude": 7.057222347419003,
+      "longitude": 125.57888276469632,
+      "kind": "waypoint"
+    },
+    {
+      "id": "f398bbf9-7a4a-4165-8261-94bb4d0ade53",
+      "name": "",
+      "latitude": 7.05805286047197,
+      "longitude": 125.5799538156694,
+      "kind": "waypoint"
+    },
+    {
+      "id": "019b54ee-66bd-7aa5-9223-2991578a10bc",
+      "name": "DGT Station",
+      "latitude": 7.058288463021384,
+      "longitude": 125.58031629926563,
+      "kind": "stop"
+    },
+    {
+      "id": "0a140336-f1b1-4f31-ab8e-2a3aa1e717ef",
+      "name": "",
+      "latitude": 7.059097250777362,
+      "longitude": 125.58140187224554,
+      "kind": "waypoint"
+    },
+    {
+      "id": "8f67bc4a-31bc-4a1f-bc4f-46fedf391571",
+      "name": "",
+      "latitude": 7.059448,
+      "longitude": 125.58270254904481,
+      "kind": "waypoint"
+    },
+    {
+      "id": "6154d64f-c634-4f7a-8d9a-d6011477c0a9",
+      "name": "",
+      "latitude": 7.059601105993342,
+      "longitude": 125.58404999370583,
+      "kind": "waypoint"
+    },
+    {
+      "id": "b1755ca2-60d5-4faa-b6ea-226beb142a37",
+      "name": "",
+      "latitude": 7.059925,
+      "longitude": 125.58536940543667,
+      "kind": "waypoint"
+    },
+    {
+      "id": "7248ce7b-bf54-4fb1-9e75-9bb117803acb",
+      "name": "",
+      "latitude": 7.060244025322985,
+      "longitude": 125.58669010611536,
+      "kind": "waypoint"
+    },
+    {
+      "id": "4b12f13a-5126-428a-acf0-1d593e72e7d1",
+      "name": "",
+      "latitude": 7.060559900377196,
+      "longitude": 125.58801159245218,
+      "kind": "waypoint"
+    },
+    {
+      "id": "e1ccbbe9-d281-43d6-ae4a-15a82859ff7d",
+      "name": "",
+      "latitude": 7.060873526206291,
+      "longitude": 125.58933361313449,
+      "kind": "waypoint"
+    },
+    {
+      "id": "019b54ee-66be-72cc-b07f-94fbabab23d3",
+      "name": "Water District Matina Station",
+      "latitude": 7.060972585362123,
+      "longitude": 125.59005429145282,
+      "kind": "stop"
+    },
+    {
+      "id": "073258d8-4311-4053-82a2-5783815114a0",
+      "name": "",
+      "latitude": 7.061346555412294,
+      "longitude": 125.5913622378674,
+      "kind": "waypoint"
+    },
+    {
+      "id": "94bcaea2-c6ed-4140-ba90-fadcfbb8bd23",
+      "name": "",
+      "latitude": 7.061655113301618,
+      "longitude": 125.59268548507255,
+      "kind": "waypoint"
+    },
+    {
+      "id": "019b54ee-66bf-7082-9fe8-8acde4490002",
+      "name": "NCCC Maa Station",
+      "latitude": 7.06192856978879,
+      "longitude": 125.59391312759931,
+      "kind": "stop"
+    },
+    {
+      "id": "5f063682-51bd-4b92-86e1-95736bbe9fdf",
+      "name": "",
+      "latitude": 7.0622624649229735,
+      "longitude": 125.59523035561317,
+      "kind": "waypoint"
+    },
+    {
+      "id": "71b78816-a252-4f53-a6d3-0e62292a583e",
+      "name": "",
+      "latitude": 7.06257798547868,
+      "longitude": 125.59655193914875,
+      "kind": "waypoint"
+    },
+    {
+      "id": "019b54ee-66c0-79cb-86ba-5325090abbf7",
+      "name": "Ateneo Matina Station",
+      "latitude": 7.062850789005836,
+      "longitude": 125.59773797305172,
+      "kind": "stop"
+    },
+    {
+      "id": "9022852a-5ea1-424b-ac44-1bf3d8929f54",
+      "name": "",
+      "latitude": 7.063179995139709,
+      "longitude": 125.59905598055883,
+      "kind": "waypoint"
+    },
+    {
+      "id": "f9af7bb6-c2ab-45b5-adb9-ae811f668b2b",
+      "name": "",
+      "latitude": 7.063503881864648,
+      "longitude": 125.60037551382759,
+      "kind": "waypoint"
+    },
+    {
+      "id": "81a5d031-d659-4bcf-8f10-7ca8c0732aad",
+      "name": "",
+      "latitude": 7.064271084037057,
+      "longitude": 125.60144962094405,
+      "kind": "waypoint"
+    },
+    {
+      "id": "7be5b70c-3319-44d9-a6d1-0503ffbd06c5",
+      "name": "",
+      "latitude": 7.065550397656309,
+      "longitude": 125.6018460786326,
+      "kind": "waypoint"
+    },
+    {
+      "id": "bfa6fb50-797d-44a9-ae70-f285bf868da7",
+      "name": "",
+      "latitude": 7.06687322150599,
+      "longitude": 125.60211234707002,
+      "kind": "waypoint"
+    },
+    {
+      "id": "1b4bbff0-6ea4-428f-85ed-fa7705a040f6",
+      "name": "",
+      "latitude": 7.06808306566557,
+      "longitude": 125.60264508193669,
+      "kind": "waypoint"
+    },
+    {
+      "id": "019b54ee-66c1-72d7-9c6c-a09a232bc253",
+      "name": "Pichon Street corner Quirino Avenue Station",
+      "latitude": 7.067860141373998,
+      "longitude": 125.60311746328352,
+      "kind": "stop"
+    },
+    {
+      "id": "c4625080-d2cf-492d-af5c-ba25a1de0b44",
+      "name": "",
+      "latitude": 7.067001867500023,
+      "longitude": 125.6041681479583,
+      "kind": "waypoint"
+    },
+    {
+      "id": "2f5ae37b-774a-40d4-83ad-386943dfdcc2",
+      "name": "",
+      "latitude": 7.066085936042923,
+      "longitude": 125.6051660697237,
+      "kind": "waypoint"
+    },
+    {
+      "id": "8a9ac01a-2d83-475d-9a66-51595a4aa8d3",
+      "name": "",
+      "latitude": 7.065171849528177,
+      "longitude": 125.60616570960562,
+      "kind": "waypoint"
+    },
+    {
+      "id": "019b54ee-66c2-75eb-9541-c50cd7df0ee2",
+      "name": "Grand Menseng Hotel Station",
+      "latitude": 7.0645041532673645,
+      "longitude": 125.60685088783407,
+      "kind": "stop"
+    },
+    {
+      "id": "885b9068-9bd4-4036-b188-ab599f2df24e",
+      "name": "",
+      "latitude": 7.063865713753094,
+      "longitude": 125.60805159764124,
+      "kind": "waypoint"
+    },
+    {
+      "id": "c48a8b8d-05fd-4ad9-a262-f1933f4191b4",
+      "name": "",
+      "latitude": 7.063178935845052,
+      "longitude": 125.6092211283099,
+      "kind": "waypoint"
+    },
+    {
+      "id": "d72cf68e-8e3b-43c2-90ac-e6841504cb76",
+      "name": "",
+      "latitude": 7.064065756309878,
+      "longitude": 125.60985072105119,
+      "kind": "waypoint"
+    },
+    {
+      "id": "444aa227-f922-4087-accd-6fbfc3333c4d",
+      "name": "",
+      "latitude": 7.065370395797696,
+      "longitude": 125.61019610463617,
+      "kind": "waypoint"
+    },
+    {
+      "id": "019b54ee-66c3-79ce-bce5-f6380aaa4168",
+      "name": "CM Recto Avenue Station",
+      "latitude": 7.0665252644676,
+      "longitude": 125.61056370265396,
+      "kind": "stop"
+    },
+    {
+      "id": "7987b084-a48a-4a27-87a6-6f533d29489d",
+      "name": "",
+      "latitude": 7.067837853237177,
+      "longitude": 125.61087943386394,
+      "kind": "waypoint"
+    },
+    {
+      "id": "ca9fb061-f9af-4e7e-8412-f13ce7a4037f",
+      "name": "",
+      "latitude": 7.069134238603732,
+      "longitude": 125.6112550690695,
+      "kind": "waypoint"
+    },
+    {
+      "id": "9bfd19aa-6c96-468a-923c-f2596c3cb530",
+      "name": "",
+      "latitude": 7.070431386489909,
+      "longitude": 125.61162807994869,
+      "kind": "waypoint"
+    },
+    {
+      "id": "d1ecf2ca-a590-4052-918b-1670c6ad0bf4",
+      "name": "",
+      "latitude": 7.071733001961063,
+      "longitude": 125.61198500051532,
+      "kind": "waypoint"
+    },
+    {
+      "id": "1141eab0-059a-434d-97e3-6222a338274b",
+      "name": "",
+      "latitude": 7.072878457279713,
+      "longitude": 125.61163303679558,
+      "kind": "waypoint"
+    },
+    {
+      "id": "0767eae8-d702-4441-93ac-5183402c8ba1",
+      "name": "",
+      "latitude": 7.073232529299762,
+      "longitude": 125.61086686474131,
+      "kind": "waypoint"
+    },
+    {
+      "id": "019b54ee-66ad-7f4b-9463-840c260b73ff",
+      "name": "Davao Light (C. Bangoy Street) Station",
+      "latitude": 7.072765836687623,
+      "longitude": 125.61067755688578,
+      "kind": "stop"
+    }
+  ]
+}

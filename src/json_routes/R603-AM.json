@@ -1,0 +1,1104 @@
+{
+  "id": "019b4a3c-ce48-7c7b-9692-d4299d526cfa",
+  "route_number": "R603",
+  "name": "Buhangin to Roxas",
+  "area": "Buhangin",
+  "time_period": "AM",
+  "color": "#b464af",
+  "start_time": "06:00",
+  "end_time": "10:00",
+  "points": [
+    {
+      "id": "019b54ee-66c5-729b-bf23-8a6889542dee",
+      "name": "Red Cross Roxas Station",
+      "latitude": 7.0726005776619445,
+      "longitude": 125.61146655985704,
+      "kind": "stop"
+    },
+    {
+      "id": "b27c1519-1c0f-452c-8edd-1cefd7c702ba",
+      "name": "",
+      "latitude": 7.072523245550223,
+      "longitude": 125.6121999264596,
+      "kind": "waypoint"
+    },
+    {
+      "id": "7a8a5506-1a8d-494e-a7d2-67189ea3cda0",
+      "name": "",
+      "latitude": 7.073823069095247,
+      "longitude": 125.61256202036911,
+      "kind": "waypoint"
+    },
+    {
+      "id": "e9a952d5-2da7-4c39-b3e0-568be2fcdce6",
+      "name": "",
+      "latitude": 7.0751160925867165,
+      "longitude": 125.61294903049915,
+      "kind": "waypoint"
+    },
+    {
+      "id": "019b54ee-66c6-7383-a4ee-32445bbf474a",
+      "name": "Davao Mental Hospital Station",
+      "latitude": 7.076155100789407,
+      "longitude": 125.61331228715926,
+      "kind": "stop"
+    },
+    {
+      "id": "95be1ed1-face-45df-868d-15db815e2bc0",
+      "name": "",
+      "latitude": 7.077488787334885,
+      "longitude": 125.6132815298687,
+      "kind": "waypoint"
+    },
+    {
+      "id": "9403e0df-c08b-4a54-82ec-429f1911e3e6",
+      "name": "",
+      "latitude": 7.07881237977769,
+      "longitude": 125.61304594025968,
+      "kind": "waypoint"
+    },
+    {
+      "id": "792f8a1b-8587-4035-82c0-2a5875a8a53b",
+      "name": "",
+      "latitude": 7.080147124892639,
+      "longitude": 125.61284953449757,
+      "kind": "waypoint"
+    },
+    {
+      "id": "82cdaca2-a9c3-4e45-adeb-c252593a42ff",
+      "name": "",
+      "latitude": 7.081484785692876,
+      "longitude": 125.61267402753667,
+      "kind": "waypoint"
+    },
+    {
+      "id": "e785796d-dbbc-49f0-931c-d4f65826d66a",
+      "name": "",
+      "latitude": 7.082823675613898,
+      "longitude": 125.6125082350411,
+      "kind": "waypoint"
+    },
+    {
+      "id": "301bf39d-6779-4687-afc8-31aca55aa066",
+      "name": "",
+      "latitude": 7.084113948119646,
+      "longitude": 125.612155029053,
+      "kind": "waypoint"
+    },
+    {
+      "id": "d8e1300a-c0bd-497d-8b0e-045bc5d5652c",
+      "name": "",
+      "latitude": 7.085290151468766,
+      "longitude": 125.61148980399697,
+      "kind": "waypoint"
+    },
+    {
+      "id": "019b54ee-66c7-7cd9-9bec-5cc25371f853",
+      "name": "NCCC Mall VP Station",
+      "latitude": 7.085863501871174,
+      "longitude": 125.61127868777157,
+      "kind": "stop"
+    },
+    {
+      "id": "864d154c-2383-487a-a820-4c575d28736d",
+      "name": "",
+      "latitude": 7.08696671196155,
+      "longitude": 125.61048837984346,
+      "kind": "waypoint"
+    },
+    {
+      "id": "c9fbd723-d116-4caf-83a2-a314df6e0375",
+      "name": "",
+      "latitude": 7.088270488789191,
+      "longitude": 125.61018894445579,
+      "kind": "waypoint"
+    },
+    {
+      "id": "277ac265-479a-4fda-9612-1362cb6d1876",
+      "name": "",
+      "latitude": 7.089612722049074,
+      "longitude": 125.6100546205746,
+      "kind": "waypoint"
+    },
+    {
+      "id": "019b54ee-66c8-7776-8e12-93c7c79cf22f",
+      "name": "Abreeza Mall Station",
+      "latitude": 7.0903434881440575,
+      "longitude": 125.61002322460297,
+      "kind": "stop"
+    },
+    {
+      "id": "fe997e71-b1fa-4c38-9d0e-c7a655837f12",
+      "name": "",
+      "latitude": 7.091639468527231,
+      "longitude": 125.6102341859479,
+      "kind": "waypoint"
+    },
+    {
+      "id": "442c61dc-707d-4a7e-a944-e9d52f2b1451",
+      "name": "",
+      "latitude": 7.0925900453653465,
+      "longitude": 125.61117507480456,
+      "kind": "waypoint"
+    },
+    {
+      "id": "dcccfd25-98dd-4256-bfc9-97397a598a9f",
+      "name": "",
+      "latitude": 7.093297508951426,
+      "longitude": 125.61233251460496,
+      "kind": "waypoint"
+    },
+    {
+      "id": "84678645-6f5f-435e-894f-f63d0474b517",
+      "name": "",
+      "latitude": 7.094003061082363,
+      "longitude": 125.61349112216472,
+      "kind": "waypoint"
+    },
+    {
+      "id": "08b696aa-dcc5-4436-87e4-79a18d3a5022",
+      "name": "",
+      "latitude": 7.09471156906316,
+      "longitude": 125.61464311195502,
+      "kind": "waypoint"
+    },
+    {
+      "id": "019b54ee-66c9-78dc-9675-5d4b68fcf0de",
+      "name": "JP Laurel Flyover Station",
+      "latitude": 7.094941469198901,
+      "longitude": 125.61506550737136,
+      "kind": "stop"
+    },
+    {
+      "id": "a2620e55-e386-4ed9-ac0c-25b190a77e01",
+      "name": "",
+      "latitude": 7.094926219155233,
+      "longitude": 125.61609782968074,
+      "kind": "waypoint"
+    },
+    {
+      "id": "73acdf6c-7286-43eb-8919-d5888df5103b",
+      "name": "",
+      "latitude": 7.095234411351618,
+      "longitude": 125.61528522961461,
+      "kind": "waypoint"
+    },
+    {
+      "id": "16fe689d-d6b8-4795-97ad-f34c271f15b0",
+      "name": "",
+      "latitude": 7.096562460212607,
+      "longitude": 125.61507412507387,
+      "kind": "waypoint"
+    },
+    {
+      "id": "f98f729c-ba42-4a63-9c77-094e77fd1a8d",
+      "name": "",
+      "latitude": 7.097897150227236,
+      "longitude": 125.61491497853896,
+      "kind": "waypoint"
+    },
+    {
+      "id": "019b54ee-66ca-789c-9745-2a4b904fd981",
+      "name": "Ladislawa Station",
+      "latitude": 7.098880847573028,
+      "longitude": 125.61488160866816,
+      "kind": "stop"
+    },
+    {
+      "id": "d6e9cfb6-ee8b-459f-b473-e969f7c16aba",
+      "name": "",
+      "latitude": 7.100220902548649,
+      "longitude": 125.61472048718078,
+      "kind": "waypoint"
+    },
+    {
+      "id": "35c0f1bd-80aa-452e-b4a1-462790cff4e2",
+      "name": "",
+      "latitude": 7.101559438472056,
+      "longitude": 125.61455692610022,
+      "kind": "waypoint"
+    },
+    {
+      "id": "7a3d4db5-ad7b-45c5-a8f0-a917e2250dd2",
+      "name": "",
+      "latitude": 7.102889250025845,
+      "longitude": 125.61432879166236,
+      "kind": "waypoint"
+    },
+    {
+      "id": "8f8b8359-1530-45c2-a004-4641af07f952",
+      "name": "",
+      "latitude": 7.104218405242507,
+      "longitude": 125.61409692259413,
+      "kind": "waypoint"
+    },
+    {
+      "id": "f915d1a6-c8f8-4652-842a-81dca0f69dee",
+      "name": "",
+      "latitude": 7.105549966404017,
+      "longitude": 125.6138795054735,
+      "kind": "waypoint"
+    },
+    {
+      "id": "05b15618-28b7-4bd0-be04-eec18e249301",
+      "name": "",
+      "latitude": 7.106880197314016,
+      "longitude": 125.61365396674482,
+      "kind": "waypoint"
+    },
+    {
+      "id": "11c264aa-fde3-4f8e-81c5-61518ab8cac4",
+      "name": "",
+      "latitude": 7.108209287548527,
+      "longitude": 125.61342205128156,
+      "kind": "waypoint"
+    },
+    {
+      "id": "5994bd94-5aea-4085-ac1e-f8b098a7c30d",
+      "name": "",
+      "latitude": 7.109466188493686,
+      "longitude": 125.61302306189344,
+      "kind": "waypoint"
+    },
+    {
+      "id": "24c7358c-5b78-4ba7-8de2-7dc4acd60743",
+      "name": "",
+      "latitude": 7.110795008035068,
+      "longitude": 125.61324774920867,
+      "kind": "waypoint"
+    },
+    {
+      "id": "c2d4b578-8c45-4500-93f1-5e8e8d2e2c9d",
+      "name": "",
+      "latitude": 7.112134241254224,
+      "longitude": 125.61331593968644,
+      "kind": "waypoint"
+    },
+    {
+      "id": "06feed35-e234-4b3e-aa06-a25136460793",
+      "name": "",
+      "latitude": 7.1122199785666265,
+      "longitude": 125.61329099031563,
+      "kind": "waypoint"
+    },
+    {
+      "id": "5c560c47-1b34-422c-9a0c-78d75aeb7983",
+      "name": "",
+      "latitude": 7.113346928779096,
+      "longitude": 125.61297601448561,
+      "kind": "waypoint"
+    },
+    {
+      "id": "03fed0dd-0bb9-4aa9-a91a-78da4a8b7119",
+      "name": "",
+      "latitude": 7.1145982745127085,
+      "longitude": 125.6134424186111,
+      "kind": "waypoint"
+    },
+    {
+      "id": "fa9f2871-0e8d-4ce8-a38f-fc76c4470c58",
+      "name": "",
+      "latitude": 7.115884541187885,
+      "longitude": 125.61385114117944,
+      "kind": "waypoint"
+    },
+    {
+      "id": "6cb9c139-af48-4d05-bd20-c16b7870449a",
+      "name": "",
+      "latitude": 7.116675046889462,
+      "longitude": 125.61485560179949,
+      "kind": "waypoint"
+    },
+    {
+      "id": "19a555f3-1813-4b06-9e07-90a90f9802b0",
+      "name": "",
+      "latitude": 7.117143122895215,
+      "longitude": 125.61612655302847,
+      "kind": "waypoint"
+    },
+    {
+      "id": "fb1f3888-44bb-4dd1-a087-b262321f3a92",
+      "name": "",
+      "latitude": 7.117531570706022,
+      "longitude": 125.61742669820869,
+      "kind": "waypoint"
+    },
+    {
+      "id": "c294f606-f2e4-4619-8534-9d412d99f726",
+      "name": "",
+      "latitude": 7.118110904717874,
+      "longitude": 125.61865280943574,
+      "kind": "waypoint"
+    },
+    {
+      "id": "756a052b-22d1-4f90-ac4d-d359ec47202a",
+      "name": "",
+      "latitude": 7.118733516008884,
+      "longitude": 125.61985852994603,
+      "kind": "waypoint"
+    },
+    {
+      "id": "019b54ee-66cb-75f0-8548-1830568d71f0",
+      "name": "Holy Child Cabantian Station",
+      "latitude": 7.119249232845036,
+      "longitude": 125.62092077621276,
+      "kind": "stop"
+    },
+    {
+      "id": "3f5dd490-fd27-4c0e-be42-e3fbac2f45d7",
+      "name": "",
+      "latitude": 7.119915149851027,
+      "longitude": 125.62210377705016,
+      "kind": "waypoint"
+    },
+    {
+      "id": "b84f749a-75c9-4e87-8cc8-3c40c97a4326",
+      "name": "",
+      "latitude": 7.120566211965457,
+      "longitude": 125.62329439068144,
+      "kind": "waypoint"
+    },
+    {
+      "id": "ab9a45f7-4ec4-4c80-94ab-651c94e9a06c",
+      "name": "",
+      "latitude": 7.121630040945571,
+      "longitude": 125.62390224955881,
+      "kind": "waypoint"
+    },
+    {
+      "id": "b4678bc5-49ae-46ce-b814-153e22885089",
+      "name": "",
+      "latitude": 7.122945557611092,
+      "longitude": 125.62362776362139,
+      "kind": "waypoint"
+    },
+    {
+      "id": "e2e90ef6-b314-47d2-ba32-27524d28cdee",
+      "name": "",
+      "latitude": 7.12418063819993,
+      "longitude": 125.62308129719595,
+      "kind": "waypoint"
+    },
+    {
+      "id": "ce0ffa4d-232e-4e11-bd87-39c8802a11dd",
+      "name": "",
+      "latitude": 7.125324004229545,
+      "longitude": 125.62238299504834,
+      "kind": "waypoint"
+    },
+    {
+      "id": "5d42b442-35f3-4a97-a41d-71f862a75689",
+      "name": "",
+      "latitude": 7.126198007571905,
+      "longitude": 125.62134749092677,
+      "kind": "waypoint"
+    },
+    {
+      "id": "dc1a79df-e4a8-48c6-a941-dcb5f7c6b5cf",
+      "name": "",
+      "latitude": 7.127084106287975,
+      "longitude": 125.6203249120639,
+      "kind": "waypoint"
+    },
+    {
+      "id": "019b54ee-66cc-74aa-8268-897ed0174ef0",
+      "name": "Jollibee Cabantian Station",
+      "latitude": 7.127578870441937,
+      "longitude": 125.61997100407768,
+      "kind": "stop"
+    },
+    {
+      "id": "c4e80eb8-3986-4ac8-9a66-7f004b00b19e",
+      "name": "",
+      "latitude": 7.128642059120337,
+      "longitude": 125.61913345228145,
+      "kind": "waypoint"
+    },
+    {
+      "id": "a7432f4c-5ec5-4d1b-80af-d1e9d3635a89",
+      "name": "",
+      "latitude": 7.129471826269737,
+      "longitude": 125.61810542299543,
+      "kind": "waypoint"
+    },
+    {
+      "id": "dc1db245-2c48-46e2-b41a-7f3da8a3e16a",
+      "name": "",
+      "latitude": 7.130020508053744,
+      "longitude": 125.61686348179633,
+      "kind": "waypoint"
+    },
+    {
+      "id": "43119b9b-6aa4-43d1-9cdb-7d2508e4b029",
+      "name": "",
+      "latitude": 7.130574941363725,
+      "longitude": 125.6156241289998,
+      "kind": "waypoint"
+    },
+    {
+      "id": "ad1b6aae-f9b1-4138-b9a5-7a4d7b7497c4",
+      "name": "",
+      "latitude": 7.1311396753301866,
+      "longitude": 125.61438950716484,
+      "kind": "waypoint"
+    },
+    {
+      "id": "ab1cf243-8cad-4c96-b86b-ac52ddc63b2b",
+      "name": "",
+      "latitude": 7.131704112581273,
+      "longitude": 125.61315475232121,
+      "kind": "waypoint"
+    },
+    {
+      "id": "8ad3851e-9966-4c90-9781-7606faa85d07",
+      "name": "",
+      "latitude": 7.13244770635653,
+      "longitude": 125.61203529364347,
+      "kind": "waypoint"
+    },
+    {
+      "id": "1bbbb0f0-1f2a-4f72-9dca-01f964aae8af",
+      "name": "",
+      "latitude": 7.1334601058640805,
+      "longitude": 125.61113690589859,
+      "kind": "waypoint"
+    },
+    {
+      "id": "1392f9c4-479c-4c8b-9549-b204571afdda",
+      "name": "",
+      "latitude": 7.134479943072824,
+      "longitude": 125.6102470493927,
+      "kind": "waypoint"
+    },
+    {
+      "id": "6ef0ee06-24d9-4f70-a43c-123e7495bd33",
+      "name": "",
+      "latitude": 7.135492751982303,
+      "longitude": 125.60934921362107,
+      "kind": "waypoint"
+    },
+    {
+      "id": "5ecbc828-700a-4494-baab-eec2eff2d3e6",
+      "name": "",
+      "latitude": 7.135560945333841,
+      "longitude": 125.60928896696936,
+      "kind": "waypoint"
+    },
+    {
+      "id": "80ff9e23-ec15-4e38-be12-2ef98cad43de",
+      "name": "",
+      "latitude": 7.13643690420906,
+      "longitude": 125.60851009224312,
+      "kind": "waypoint"
+    },
+    {
+      "id": "c5731604-778d-440d-91c7-5df27d3c46e6",
+      "name": "",
+      "latitude": 7.137277953542952,
+      "longitude": 125.60745182151923,
+      "kind": "waypoint"
+    },
+    {
+      "id": "451cce9e-0066-4beb-9090-4b25c8aaccc5",
+      "name": "",
+      "latitude": 7.138035827205759,
+      "longitude": 125.60632726152642,
+      "kind": "waypoint"
+    },
+    {
+      "id": "916e45c2-75d6-4ba6-9287-07f5d9b3b495",
+      "name": "",
+      "latitude": 7.138810005446978,
+      "longitude": 125.60521399182954,
+      "kind": "waypoint"
+    },
+    {
+      "id": "20a04000-9e62-4565-88ea-c535a19c1a4d",
+      "name": "",
+      "latitude": 7.139551686412586,
+      "longitude": 125.60407848146754,
+      "kind": "waypoint"
+    },
+    {
+      "id": "d04dc9c1-ed46-4d94-8dab-936b3988ef6b",
+      "name": "",
+      "latitude": 7.140302110698719,
+      "longitude": 125.60294883720778,
+      "kind": "waypoint"
+    },
+    {
+      "id": "6d0e5656-2aee-424a-b7cb-93e85ce390a1",
+      "name": "",
+      "latitude": 7.141075047966112,
+      "longitude": 125.60183492946159,
+      "kind": "waypoint"
+    },
+    {
+      "id": "05857d4b-6958-4461-aa7e-4d058f58ecdb",
+      "name": "",
+      "latitude": 7.141836548585791,
+      "longitude": 125.60071294054893,
+      "kind": "waypoint"
+    },
+    {
+      "id": "ddbd501f-2212-4d8a-9ed5-f86b3958d4d0",
+      "name": "",
+      "latitude": 7.142561035586882,
+      "longitude": 125.5996570530446,
+      "kind": "waypoint"
+    },
+    {
+      "id": "019b54ee-66cd-7dec-b029-8d584c50759b",
+      "name": "Citymall Northtown Station",
+      "latitude": 7.142079575068593,
+      "longitude": 125.59992368318262,
+      "kind": "stop"
+    },
+    {
+      "id": "fa6d3344-3491-421a-bcf4-b4de25bccaef",
+      "name": "",
+      "latitude": 7.141612353821701,
+      "longitude": 125.6010537731494,
+      "kind": "waypoint"
+    },
+    {
+      "id": "3bbf15d4-9186-429d-b8b3-91631ebc1351",
+      "name": "",
+      "latitude": 7.140845970105906,
+      "longitude": 125.60217254484114,
+      "kind": "waypoint"
+    },
+    {
+      "id": "5a3b8c22-b252-4e12-8568-3c017d82c54c",
+      "name": "",
+      "latitude": 7.140073050460988,
+      "longitude": 125.60328645520443,
+      "kind": "waypoint"
+    },
+    {
+      "id": "a476bf9a-2bca-40fc-9830-b9d4d3da8d28",
+      "name": "",
+      "latitude": 7.139329724708921,
+      "longitude": 125.60442087596168,
+      "kind": "waypoint"
+    },
+    {
+      "id": "38161770-e239-4019-9bd8-8feddce415c0",
+      "name": "",
+      "latitude": 7.138575407773187,
+      "longitude": 125.60554772047207,
+      "kind": "waypoint"
+    },
+    {
+      "id": "ce557b9f-af9d-413c-b3d7-cea9c75fe464",
+      "name": "",
+      "latitude": 7.137812688195524,
+      "longitude": 125.6066689396171,
+      "kind": "waypoint"
+    },
+    {
+      "id": "814d8484-36a2-4af7-8012-bdd176b84fde",
+      "name": "",
+      "latitude": 7.137043632589332,
+      "longitude": 125.60778581205784,
+      "kind": "waypoint"
+    },
+    {
+      "id": "0679339e-76a9-4e42-8ff1-1a13aa54d377",
+      "name": "",
+      "latitude": 7.136133914204617,
+      "longitude": 125.6087821813093,
+      "kind": "waypoint"
+    },
+    {
+      "id": "d6b06525-5517-49ef-be84-77bc4edcbd5a",
+      "name": "",
+      "latitude": 7.135119351713773,
+      "longitude": 125.60967805625938,
+      "kind": "waypoint"
+    },
+    {
+      "id": "39012468-f074-4d5a-8ac0-aa30b42e130d",
+      "name": "",
+      "latitude": 7.134104073708894,
+      "longitude": 125.61057306839963,
+      "kind": "waypoint"
+    },
+    {
+      "id": "5f66b448-4fb1-4d0c-98cc-32f3b2f3bf2a",
+      "name": "",
+      "latitude": 7.133761336322655,
+      "longitude": 125.61087257765945,
+      "kind": "waypoint"
+    },
+    {
+      "id": "0ba551c9-dc35-4aee-aeb6-48ef7a0e1b4f",
+      "name": "",
+      "latitude": 7.13315380810996,
+      "longitude": 125.61140441790378,
+      "kind": "waypoint"
+    },
+    {
+      "id": "402df81c-884f-4f22-8c16-98b66bfd39dd",
+      "name": "",
+      "latitude": 7.132164203087523,
+      "longitude": 125.61232693598622,
+      "kind": "waypoint"
+    },
+    {
+      "id": "cdead7b4-9ce5-4834-8378-2a4adf5f2c80",
+      "name": "",
+      "latitude": 7.131532926479274,
+      "longitude": 125.61352500075526,
+      "kind": "waypoint"
+    },
+    {
+      "id": "43031d33-9831-454a-89e4-3b4618510354",
+      "name": "",
+      "latitude": 7.130970546192751,
+      "longitude": 125.6147607123252,
+      "kind": "waypoint"
+    },
+    {
+      "id": "aa93e802-a891-4c7e-ac01-d062153bc7f5",
+      "name": "",
+      "latitude": 7.130407780030099,
+      "longitude": 125.61599623691828,
+      "kind": "waypoint"
+    },
+    {
+      "id": "4838921c-97d8-434a-a80c-6447b1386790",
+      "name": "",
+      "latitude": 7.1298553785650665,
+      "longitude": 125.61723651420225,
+      "kind": "waypoint"
+    },
+    {
+      "id": "7c453cca-281f-4d48-8f30-9a4d928c15c0",
+      "name": "",
+      "latitude": 7.129746758715086,
+      "longitude": 125.61748128509603,
+      "kind": "waypoint"
+    },
+    {
+      "id": "373731d2-eb99-4d12-8ea2-9076135d95ad",
+      "name": "",
+      "latitude": 7.129522363610438,
+      "longitude": 125.6179905792793,
+      "kind": "waypoint"
+    },
+    {
+      "id": "288edf86-cf66-478d-96bd-229fa7703058",
+      "name": "",
+      "latitude": 7.1287396256560225,
+      "longitude": 125.6190552388313,
+      "kind": "waypoint"
+    },
+    {
+      "id": "206c11fb-7209-40a1-bed8-91bc940314a9",
+      "name": "",
+      "latitude": 7.127666233437704,
+      "longitude": 125.61987828373199,
+      "kind": "waypoint"
+    },
+    {
+      "id": "019b54ee-66ce-72e0-9d55-3947d4b73cc5",
+      "name": "Jollibee Cabantian Station",
+      "latitude": 7.127613391609444,
+      "longitude": 125.61986803193668,
+      "kind": "stop"
+    },
+    {
+      "id": "d02c4050-9031-4d8e-96e5-6e43628762f0",
+      "name": "",
+      "latitude": 7.126644480626094,
+      "longitude": 125.62081002358562,
+      "kind": "waypoint"
+    },
+    {
+      "id": "19c66103-52ac-4b33-a399-dbca5f10c5a3",
+      "name": "",
+      "latitude": 7.125775309857156,
+      "longitude": 125.6218496409132,
+      "kind": "waypoint"
+    },
+    {
+      "id": "f2e0cf7b-8295-47aa-9b9b-3f6ece805c3b",
+      "name": "",
+      "latitude": 7.124806572099071,
+      "longitude": 125.6227755828858,
+      "kind": "waypoint"
+    },
+    {
+      "id": "c71ccc63-7787-4e0c-b868-ac68c14fd809",
+      "name": "",
+      "latitude": 7.123581627038489,
+      "longitude": 125.62334416500721,
+      "kind": "waypoint"
+    },
+    {
+      "id": "1444ba5b-7a4a-47bc-bdc5-72c9510ba4e7",
+      "name": "",
+      "latitude": 7.122318970149879,
+      "longitude": 125.62380792031358,
+      "kind": "waypoint"
+    },
+    {
+      "id": "6711b78a-9191-471f-9016-6fee7d1420a4",
+      "name": "",
+      "latitude": 7.120985469911627,
+      "longitude": 125.62383717869878,
+      "kind": "waypoint"
+    },
+    {
+      "id": "d4b1967d-c3ef-46a1-8c2a-18e954819a4d",
+      "name": "",
+      "latitude": 7.120248204814495,
+      "longitude": 125.6227191686661,
+      "kind": "waypoint"
+    },
+    {
+      "id": "350b8df8-7245-41c4-aa53-44d199abc8c8",
+      "name": "",
+      "latitude": 7.1196019321927935,
+      "longitude": 125.62152587407233,
+      "kind": "waypoint"
+    },
+    {
+      "id": "019b54ee-66cf-75ac-8791-1eb356c2419b",
+      "name": "Holy Child Cabantian Station",
+      "latitude": 7.1194258495231395,
+      "longitude": 125.62115890384473,
+      "kind": "stop"
+    },
+    {
+      "id": "ce418557-88a9-4de8-9038-1fc27aff57c9",
+      "name": "",
+      "latitude": 7.118788529288042,
+      "longitude": 125.61996055478588,
+      "kind": "waypoint"
+    },
+    {
+      "id": "9e7e31b0-79a7-4090-8ccc-d88ab15db2f3",
+      "name": "",
+      "latitude": 7.118161940789293,
+      "longitude": 125.61875688009832,
+      "kind": "waypoint"
+    },
+    {
+      "id": "a70b5d49-f1f5-43cf-8ef1-91c4d8d706c2",
+      "name": "",
+      "latitude": 7.117570925387565,
+      "longitude": 125.61753579541752,
+      "kind": "waypoint"
+    },
+    {
+      "id": "cb07403a-680b-4d38-b4ec-4caef5581809",
+      "name": "",
+      "latitude": 7.117167971645732,
+      "longitude": 125.6162398701673,
+      "kind": "waypoint"
+    },
+    {
+      "id": "bcce1769-bcb5-4f9a-b99a-9acc3eec70ec",
+      "name": "",
+      "latitude": 7.116723501095104,
+      "longitude": 125.61496087739098,
+      "kind": "waypoint"
+    },
+    {
+      "id": "8b73ae71-0e26-4e02-9504-5bc7913c7a48",
+      "name": "",
+      "latitude": 7.115995249002898,
+      "longitude": 125.61388306225072,
+      "kind": "waypoint"
+    },
+    {
+      "id": "91f9750f-2d55-4e26-89e6-c3c36ee605b2",
+      "name": "",
+      "latitude": 7.1147066742501295,
+      "longitude": 125.61348161299813,
+      "kind": "waypoint"
+    },
+    {
+      "id": "e241334a-bb3f-4c0b-969b-b00258c1dcf7",
+      "name": "",
+      "latitude": 7.113461622461572,
+      "longitude": 125.61296897303298,
+      "kind": "waypoint"
+    },
+    {
+      "id": "eacdb7cb-89c8-4d14-a991-aa57bf4d6fa8",
+      "name": "",
+      "latitude": 7.112158875064216,
+      "longitude": 125.61330954487853,
+      "kind": "waypoint"
+    },
+    {
+      "id": "7cbfa7a8-631c-4b0d-80f3-649a4b7fd471",
+      "name": "",
+      "latitude": 7.1108200902466825,
+      "longitude": 125.61325201002741,
+      "kind": "waypoint"
+    },
+    {
+      "id": "5856bb5f-f53d-4572-bf38-09362f1e1ac3",
+      "name": "",
+      "latitude": 7.110732095611729,
+      "longitude": 125.61323877106956,
+      "kind": "waypoint"
+    },
+    {
+      "id": "f4a673cb-7652-49aa-9e7f-45425bf34dd6",
+      "name": "",
+      "latitude": 7.1095751063689026,
+      "longitude": 125.61305772983245,
+      "kind": "waypoint"
+    },
+    {
+      "id": "23923589-36d6-4d74-bb46-b01319dc8413",
+      "name": "",
+      "latitude": 7.108321590737028,
+      "longitude": 125.61340116458585,
+      "kind": "waypoint"
+    },
+    {
+      "id": "f0f43956-a86f-4be3-ae3b-192c26b88be6",
+      "name": "",
+      "latitude": 7.106992887342442,
+      "longitude": 125.61363519009754,
+      "kind": "waypoint"
+    },
+    {
+      "id": "819f4cbd-5271-4108-9c80-abc12d237287",
+      "name": "",
+      "latitude": 7.105662628850577,
+      "longitude": 125.61386065967986,
+      "kind": "waypoint"
+    },
+    {
+      "id": "28eef43d-d4ea-461c-aa12-615a384d88cc",
+      "name": "",
+      "latitude": 7.104330712776,
+      "longitude": 125.61407610136108,
+      "kind": "waypoint"
+    },
+    {
+      "id": "cfc86ffb-c90b-45a8-ab42-d1bca9eb24d8",
+      "name": "",
+      "latitude": 7.103001955494735,
+      "longitude": 125.61431021547689,
+      "kind": "waypoint"
+    },
+    {
+      "id": "52c5ed16-799b-4392-b958-92820d9de61e",
+      "name": "",
+      "latitude": 7.101672102405,
+      "longitude": 125.61453814959916,
+      "kind": "waypoint"
+    },
+    {
+      "id": "c2ff48aa-e98c-45f8-987b-bd5a48f9046d",
+      "name": "",
+      "latitude": 7.100334715260442,
+      "longitude": 125.61471081473057,
+      "kind": "waypoint"
+    },
+    {
+      "id": "9cb2b20a-4554-43a0-b37d-357c5b2bdf06",
+      "name": "",
+      "latitude": 7.098990697621278,
+      "longitude": 125.6148271014341,
+      "kind": "waypoint"
+    },
+    {
+      "id": "019b54ee-66d0-74e4-81f5-346fc7e4f43b",
+      "name": "Ladislawa Station",
+      "latitude": 7.09901218564444,
+      "longitude": 125.61472996851512,
+      "kind": "stop"
+    },
+    {
+      "id": "4c755186-cec4-40ca-b334-39bc00a1585a",
+      "name": "",
+      "latitude": 7.097709482095446,
+      "longitude": 125.61492942039477,
+      "kind": "waypoint"
+    },
+    {
+      "id": "f19f8287-e433-433f-a27c-37d149247355",
+      "name": "",
+      "latitude": 7.096372570502632,
+      "longitude": 125.61495049457672,
+      "kind": "waypoint"
+    },
+    {
+      "id": "7e572314-a5af-4a41-80d6-90d4edb4f5ff",
+      "name": "",
+      "latitude": 7.0950591340280535,
+      "longitude": 125.61488208935204,
+      "kind": "waypoint"
+    },
+    {
+      "id": "8c96976a-aa71-4cfc-99ec-66eb40019ec4",
+      "name": "",
+      "latitude": 7.094227252083015,
+      "longitude": 125.61383177490893,
+      "kind": "waypoint"
+    },
+    {
+      "id": "8d3e2a41-a12b-44b8-9141-532a08acac9c",
+      "name": "",
+      "latitude": 7.093510391121403,
+      "longitude": 125.6126804918372,
+      "kind": "waypoint"
+    },
+    {
+      "id": "f1c99d6d-bd9d-4a81-ada0-23ae6894a444",
+      "name": "",
+      "latitude": 7.092803067503649,
+      "longitude": 125.61152296165491,
+      "kind": "waypoint"
+    },
+    {
+      "id": "a6a63388-b643-4fd1-9737-6dbff0e9f296",
+      "name": "",
+      "latitude": 7.091977914268473,
+      "longitude": 125.6104578792715,
+      "kind": "waypoint"
+    },
+    {
+      "id": "953db8d0-9034-4ca3-bec6-4585e44669dc",
+      "name": "",
+      "latitude": 7.090743038352999,
+      "longitude": 125.60995553666758,
+      "kind": "waypoint"
+    },
+    {
+      "id": "019b54ee-66d1-7d2f-bcd7-ce0f8679c08f",
+      "name": "Abreeza Mall Station",
+      "latitude": 7.0905002538625155,
+      "longitude": 125.60992510023448,
+      "kind": "stop"
+    },
+    {
+      "id": "2bd9ce0d-81f3-4ad1-8396-0f323b383544",
+      "name": "",
+      "latitude": 7.0891609909624,
+      "longitude": 125.61010000080334,
+      "kind": "waypoint"
+    },
+    {
+      "id": "ac23dc86-91a5-41f5-9f4d-a74dc8dfafcd",
+      "name": "",
+      "latitude": 7.087819362973371,
+      "longitude": 125.61023997864864,
+      "kind": "waypoint"
+    },
+    {
+      "id": "9322d41a-9860-4138-8b66-a1cfb8cc508a",
+      "name": "",
+      "latitude": 7.0865721733968146,
+      "longitude": 125.61071459757461,
+      "kind": "waypoint"
+    },
+    {
+      "id": "6b8a60f8-7852-44bd-8d58-fb6b848db2bb",
+      "name": "",
+      "latitude": 7.085417601540012,
+      "longitude": 125.61141722862459,
+      "kind": "waypoint"
+    },
+    {
+      "id": "019b54ee-66d2-7e7d-bf2e-f23d3a361401",
+      "name": "NCCC Mall VP Station",
+      "latitude": 7.0850516978424025,
+      "longitude": 125.61154817570991,
+      "kind": "stop"
+    },
+    {
+      "id": "2445cca3-a7c5-492d-b830-1843ac23c9e3",
+      "name": "",
+      "latitude": 7.0839041900923965,
+      "longitude": 125.61226454527394,
+      "kind": "waypoint"
+    },
+    {
+      "id": "44cabd76-8bf0-40be-96cc-a5c5fcfae9ba",
+      "name": "",
+      "latitude": 7.082589192703013,
+      "longitude": 125.61253797501998,
+      "kind": "waypoint"
+    },
+    {
+      "id": "73027b6a-e4cc-4c92-a004-f847fdb4d9a3",
+      "name": "",
+      "latitude": 7.081250461540473,
+      "longitude": 125.61270500515658,
+      "kind": "waypoint"
+    },
+    {
+      "id": "f3d33d39-74ca-473c-8965-c6b97ea87c49",
+      "name": "",
+      "latitude": 7.079912732930556,
+      "longitude": 125.61288003451918,
+      "kind": "waypoint"
+    },
+    {
+      "id": "143a5ce2-d5ca-4a15-acde-45cd9a4fce35",
+      "name": "",
+      "latitude": 7.078579169099949,
+      "longitude": 125.61304765567584,
+      "kind": "waypoint"
+    },
+    {
+      "id": "b8a95115-ab7f-478f-947f-9298c9114f91",
+      "name": "",
+      "latitude": 7.077242743893441,
+      "longitude": 125.61323103108808,
+      "kind": "waypoint"
+    },
+    {
+      "id": "66f5fbcd-a7b3-4626-8cbe-bc76c87bcfb9",
+      "name": "",
+      "latitude": 7.075917351392582,
+      "longitude": 125.61313859491638,
+      "kind": "waypoint"
+    },
+    {
+      "id": "be4c3198-dd02-4e32-8f05-158f93f16d72",
+      "name": "",
+      "latitude": 7.074622599121133,
+      "longitude": 125.61279517678985,
+      "kind": "waypoint"
+    },
+    {
+      "id": "73ec1c70-f67d-4431-b9f3-fb4f4d169126",
+      "name": "",
+      "latitude": 7.073601842849399,
+      "longitude": 125.61212320554702,
+      "kind": "waypoint"
+    },
+    {
+      "id": "ea8bb0f5-4ab1-43e9-a2b5-a44363f8c97c",
+      "name": "",
+      "latitude": 7.073374080598069,
+      "longitude": 125.610908,
+      "kind": "waypoint"
+    },
+    {
+      "id": "4fbdaafb-a720-404a-be66-eb9edbff721d",
+      "name": "",
+      "latitude": 7.073324510816182,
+      "longitude": 125.61095253072995,
+      "kind": "waypoint"
+    },
+    {
+      "id": "019b54ee-66c5-729b-bf23-8a6889542dee",
+      "name": "Red Cross Roxas Station",
+      "latitude": 7.0726005776619445,
+      "longitude": 125.61146655985704,
+      "kind": "stop"
+    }
+  ]
+}

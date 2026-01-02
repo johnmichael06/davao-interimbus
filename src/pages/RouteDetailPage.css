@@ -1,0 +1,256 @@
+.route-detail-container {
+  padding: 40px 20px;
+}
+
+.back-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
+  color: var(--text-muted);
+  font-weight: 500;
+  text-decoration: none;
+  margin-top: 32px;
+}
+
+.back-link:hover {
+  color: var(--primary);
+}
+
+/* --- header Section --- */
+.route-header {
+  color: white;
+  padding: 40px;
+  border-radius: 24px;
+  margin-bottom: 30px;
+  box-shadow: var(--shadow);
+}
+
+.header-top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.route-badge {
+  background: rgba(255, 255, 255, 0.25);
+  padding: 6px 16px;
+  border-radius: 30px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.route-title {
+  font-size: 2.5rem;
+  margin-top: 15px;
+}
+
+.route-subtitle {
+  opacity: 0.9;
+  margin-top: 5px;
+}
+
+/* --- the live clock --- */
+.live-clock-badge {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 8px 16px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.pulse-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #4ade80;
+  box-shadow: 0 0 8px #4ade80;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* --- card styles--- */
+.card-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--primary);
+  margin-bottom: 20px;
+}
+
+.card-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.click-hint {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* --- schedule sect --- */
+.schedule-group {
+  margin-bottom: 20px;
+}
+
+.schedule-label {
+  color: #64748b;
+  margin-bottom: 8px;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.schedule-time-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.time-chip {
+  background: #f1f5f9;
+  color: #334155;
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.no-trips {
+  color: #94a3b8;
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+/* --- timeline scrollbr --- */
+.stops-scroll-container {
+  max-height: 450px;
+  overflow-y: auto;
+  padding-right: 15px;
+}
+
+.timeline-list {
+  list-style: none;
+  padding-left: 10px;
+  position: relative;
+}
+
+.timeline-line {
+  position: absolute;
+  top: 10px;
+  bottom: 20px;
+  left: 19px;
+  width: 3px;
+  background: #e2e8f0;
+  z-index: 0;
+}
+
+.timeline-item {
+  padding: 10px 0 10px 36px;
+  margin-bottom: 4px;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 40px;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: 6px;
+  top: 18px;
+  width: 14px;
+  height: 14px;
+  background: white;
+  border: 3px solid var(--route-color);
+  border-radius: 50%;
+  z-index: 1;
+  transition: all 0.2s ease;
+}
+
+.timeline-item.active .timeline-dot {
+  width: 18px;
+  height: 18px;
+  background: var(--route-color);
+  border: 3px solid var(--route-color-faint);
+  transform: translate(-2px, -2px);
+}
+
+.stop-name {
+  display: block;
+  font-weight: 500;
+  color: #1e293b;
+  font-size: 1rem;
+  transition: color 0.2s;
+}
+
+.timeline-item.active .stop-name {
+  font-weight: 700;
+  color: var(--route-color);
+}
+
+.stop-number {
+  font-size: 0.75rem;
+  color: #94a3b8;
+  margin-top: 2px;
+  font-weight: 500;
+}
+
+/* --- Custom Scrollbar --- */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: var(--route-color-faint);
+  border-radius: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: var(--route-color);
+}
+
+/* --- disable hover effects for these specific cards --- */
+.route-detail-grid .card-panel:hover {
+  background: white !important;
+  transform: none !important;
+  box-shadow: var(--shadow) !important;
+  border: 1px solid rgba(255, 255, 255, 0.5) !important;
+}
+.route-detail-grid .card-panel:hover h3,
+.route-detail-grid .card-panel:hover div,
+.route-detail-grid .card-panel:hover span {
+  color: inherit !important;
+}
+.route-detail-grid .card-panel:hover h3 {
+  color: var(--primary) !important;
+}
