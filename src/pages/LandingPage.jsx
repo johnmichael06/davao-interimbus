@@ -96,6 +96,26 @@ export default function LandingPage() {
             TTG Engineering (MIT License)
           </a>
         </span>
+
+        {/* The Disclaimer Section */}
+        <div
+          style={{
+            marginTop: "20px",
+            paddingTop: "20px",
+            borderTop: "1px solid rgba(0,0,0,0.05)",
+            fontSize: "0.75rem",
+            lineHeight: "1.5",
+            opacity: 0.7,
+          }}
+        >
+          <p>
+            <strong>Disclaimer:</strong> This is an unofficial, student-led
+            project for community assistance. Route data is based on public
+            records and may vary. Always refer to official government
+            announcements for critical travel updates. Not affiliated with Davao
+            City Government.
+          </p>
+        </div>
       </footer>
     </>
   );
