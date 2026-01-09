@@ -1,25 +1,52 @@
+/* --- GLOBAL RESET & VARS --- */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* --- HERO SECTION --- */
+/* --- UPDATED HERO SECTION WITH PATTERN --- */
+.landing-wrapper {
+  padding: 5rem 0 10rem;
+  background-color: #ffffff;
+  /* Lighter color for dots (rgba with low opacity) */
+  background-image: radial-gradient(#cbd5e1 1.5px, transparent 1.5px);
+  background-size: 30px 30px; /* Smaller grid */
+  /* Stronger mask to fade edges */
+  mask-image: radial-gradient(circle at center, black 40%, transparent 100%);
+  -webkit-mask-image: radial-gradient(
+    circle at center,
+    black 40%,
+    transparent 100%
+  );
+}
+
+/* Ensure content sits on top */
 .landing-hero {
-  text-align: center;
-  padding: 120px 20px 80px 20px;
+  position: relative;
+  z-index: 10;
 }
 
 .hero-content {
-  max-width: 900px;
+  text-align: center;
+  max-width: 800px;
   margin: 0 auto;
 }
 
 .hero-badge {
-  margin-bottom: 30px;
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  background: #e0f2f1;
-  color: var(--primary);
-  padding: 10px 20px;
-  border-radius: 50px;
+  background: white;
+  border: 1px solid #e0f2f1;
+  padding: 8px 20px;
+  border-radius: 100px;
+  font-size: 0.875rem;
   font-weight: 600;
-  font-size: 0.9rem;
-  margin-top: 50px;
+  color: var(--text-main);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+  margin-bottom: 2rem;
 }
 
 .ping-wrapper {
@@ -30,21 +57,23 @@
 }
 
 .ping-animation {
-  animation: ping 1.5s cubic-bezier(0, 0, 0.2, 1) infinite;
   position: absolute;
+  display: inline-flex;
   height: 100%;
   width: 100%;
   border-radius: 50%;
-  background: var(--primary);
+  background-color: var(--primary);
   opacity: 0.75;
+  animation: ping 1.5s cubic-bezier(0, 0, 0.2, 1) infinite;
 }
 
 .ping-dot {
   position: relative;
+  display: inline-flex;
+  border-radius: 50%;
   height: 10px;
   width: 10px;
-  border-radius: 50%;
-  background: var(--primary);
+  background-color: var(--primary);
 }
 
 @keyframes ping {
@@ -56,115 +85,534 @@
 }
 
 .hero-title {
-  font-size: 4rem;
-  color: var(--text-main);
-  margin-bottom: 30px;
+  font-size: 3.5rem;
+  font-weight: 800;
   line-height: 1.1;
-  letter-spacing: -1px;
+  color: var(--text-main);
+  margin-bottom: 1.5rem;
 }
 
 .highlight-text {
+  /* Remove the background box */
+  background: none;
+  /* Make the text pop with your brand color */
   color: var(--primary);
+  /* Optional: Add a subtle text shadow for depth */
+  text-shadow: 0px 2px 10px rgba(15, 164, 169, 0.15);
 }
 
 .hero-subtitle {
-  font-size: 1.35rem;
-  color: var(--text-muted);
-  margin-bottom: 60px;
-  line-height: 1.7;
-  max-width: 700px;
+  font-size: 1.125rem;
+  /* Make this darker so it's easier to read */
+  color: #475569;
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+  max-width: 600px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .hero-buttons {
   display: flex;
-  gap: 20px;
   justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
   flex-wrap: wrap;
 }
 
-.features-container {
-  padding-bottom: 120px;
-  padding-top: 40px;
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 28px;
+  border-radius: 12px;
+  font-weight: 600;
+  transition: all 0.2s;
+  text-decoration: none;
+  font-size: 1rem;
 }
 
-.features-grid {
+.btn-primary {
+  background-color: var(--primary);
+  color: white;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  filter: brightness(110%);
+  box-shadow: 0 15px 25px -5px rgba(0, 0, 0, 0.15);
+}
+
+.btn-text {
+  padding: 14px 28px;
+  /* Darker gray for visibility */
+  color: #64748b;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.btn-text:hover {
+  color: var(--primary); /* Teal on hover */
+}
+
+.hero-stats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  font-size: 0.875rem;
+  /* Make stats darker and remove opacity */
+  color: #64748b;
+  font-weight: 500;
+  opacity: 1; /* Fixes the "invisible" text */
+  margin-top: 2rem;
+}
+
+.stat-separator {
+  width: 1px;
+  height: 16px;
+  background-color: #cbd5e1;
+}
+
+/* --- UPDATED ROUTES CARD (Overlapping Style) --- */
+.section-routes {
+  /* 1. The Overlap Trick: Pull it up! */
+  margin-top: -60px;
+  position: relative;
+  z-index: 20; /* Sit on top of the hero */
+
+  /* 2. Center and Size */
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 4rem; /* Space below the card */
+
+  /* 3. The "Card" Look */
+  background-color: #e0f2f1; /* Your Brand Teal/Green */
+  padding: 2.5rem 2rem;
+  border-radius: 24px;
+
+  /* 4. Deep Shadow to separate it from the background */
+  box-shadow: 0 20px 40px -10px rgba(15, 164, 169, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.6); /* Subtle border highlight */
+}
+
+/* Ensure the inner container doesn't add extra padding */
+.section-routes .container {
+  padding: 0;
+}
+
+.routes-header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 0.85rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--primary); /* Darker Teal text */
+  opacity: 0.8;
+}
+
+.routes-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.route-badge {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: white;
+  padding: 10px 20px;
+  border-radius: 14px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+  transition: all 0.2s ease;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.route-badge:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(15, 164, 169, 0.15);
+  border-color: var(--primary);
+}
+
+.route-id {
+  background: var(--primary);
+  color: white;
+  font-weight: 800;
+  font-size: 0.85rem;
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+
+.route-name {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--text-main);
+}
+
+/* Dashed style for 'Coming Soon' */
+.route-badge.pending {
+  background: rgba(255, 255, 255, 0.5);
+  border: 2px dashed #b2dfdb;
+  box-shadow: none;
+  opacity: 0.7;
+}
+
+/* --- BENTO GRID FEATURES --- */
+.section-features {
+  padding: 6rem 0;
+  /* Soft background color */
+  background-color: #fafafa;
+  /* Subtle "noise" or diagonal lines can go here, but a soft gradient is cleaner */
+  background: radial-gradient(
+      circle at top left,
+      rgba(224, 242, 241, 0.4) 0%,
+      transparent 40%
+    ),
+    radial-gradient(
+      circle at bottom right,
+      rgba(224, 242, 241, 0.4) 0%,
+      transparent 40%
+    );
+}
+
+.section-title h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  color: var(--text-main);
+}
+
+.features-bento {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 40px;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
 }
 
-.feature-card {
-  padding: 40px;
-  height: 100%;
+@media (min-width: 768px) {
+  .features-bento {
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: auto auto;
+  }
+  .large-box {
+    grid-row: span 2;
+  }
+}
+
+.bento-box {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 24px;
+  border: 1px solid #e2e8f0;
+  transition: all 0.3s ease;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  margin-top: 90px;
 }
 
-.feature-icon {
-  width: 60px;
-  height: 60px;
+.bento-box:hover {
+  border-color: var(--primary);
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.05);
+}
+
+.bento-icon-bg {
+  color: var(--primary);
   background: #e0f2f1;
+  width: fit-content;
+  padding: 1rem;
   border-radius: 16px;
+  margin-bottom: 1.5rem;
+}
+
+.feature-icon-small {
+  color: var(--primary);
+  background: #e0f2f1;
+  width: 48px;
+  height: 48px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 24px;
-  color: var(--primary);
-  transition: all 0.3s ease;
+  border-radius: 12px;
+  margin-bottom: 1rem;
 }
 
-.feature-card h3 {
-  font-size: 1.5rem;
-  margin-bottom: 16px;
-  transition: color 0.3s;
+.bento-box h3 {
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin: 0 0 0.75rem;
+  color: var(--text-main);
 }
 
-.feature-card p {
+.bento-box p {
   color: var(--text-muted);
-  transition: color 0.3s;
-  line-height: 1.7;
-  font-size: 1.05rem;
+  line-height: 1.6;
+  font-size: 1rem;
 }
 
-.landing-footer {
+/* --- UPDATED ABOUT SECTION (Matches Branding) --- */
+.section-about {
+  padding: 4rem 0 6rem;
+  background: white;
+}
+
+/* --- UPDATED ABOUT CARD WITH GRID PATTERN --- */
+.about-card {
+  /* Keep the gradient */
+  background: linear-gradient(135deg, #ffffff 0%, #f0fdfa 100%);
+  border: 1px solid #b2dfdb;
+  border-radius: 32px;
+  padding: 4rem 2rem;
   text-align: center;
-  padding: 60px 20px;
-  color: var(--text-muted);
-  font-size: 0.95rem;
-  background: rgba(255, 255, 255, 0.5);
-  margin-top: 150px;
-  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 20px 40px -15px rgba(0, 150, 136, 0.15);
+
+  /* ADD THIS: Graph Paper Grid Effect */
+  background-image: linear-gradient(
+      rgba(15, 164, 169, 0.05) 1px,
+      transparent 1px
+    ),
+    linear-gradient(90deg, rgba(15, 164, 169, 0.05) 1px, transparent 1px);
+  background-size: 30px 30px; /* Size of the grid squares */
 }
 
-.attribution-link {
-  font-size: 0.85rem;
-  opacity: 0.8;
-  margin-top: 10px;
-  display: block;
+/* Optional: Add a subtle decorative circle behind */
+.about-card::before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  right: -50px;
+  width: 200px;
+  height: 200px;
+  background: var(--primary);
+  opacity: 0.05;
+  border-radius: 50%;
+  pointer-events: none;
 }
 
-.attribution-link a {
-  text-decoration: underline;
-  color: inherit;
-}
-.attribution-link a:hover {
+.about-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  /* Match the Hero Badge style */
+  background: white;
+  border: 1px solid #b2dfdb;
   color: var(--primary);
+  padding: 8px 16px;
+  border-radius: 100px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
 }
 
+.about-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 800;
+  /* Change text to dark since background is light */
+  color: var(--text-main);
+  letter-spacing: -0.02em;
+}
+
+.about-content p {
+  /* Use your muted text variable */
+  color: var(--text-muted);
+  max-width: 600px;
+  margin: 0 auto 1rem; /* Reduced bottom margin */
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
+/* --- FOOTER FIX --- */
+.landing-footer {
+  background-color: #ffffff;
+  border-top: 1px solid #f1f5f9;
+  padding: 4rem 0 2rem;
+  margin-top: auto; /* Ensures it sits at bottom */
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+/* Brand Styling */
+.brand-logo {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--text-main);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.02em;
+}
+
+.brand-dot {
+  width: 10px;
+  height: 10px;
+  background-color: var(--primary);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.footer-brand p {
+  color: #64748b;
+  font-size: 0.95rem;
+  max-width: 300px;
+  line-height: 1.5;
+}
+
+/* Right Side Links */
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* Aligns to right */
+  gap: 12px;
+}
+
+.credit-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #f8fafc;
+  padding: 8px 16px;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  color: var(--text-main);
+  border: 1px solid #e2e8f0;
+}
+
+.source-link {
+  font-size: 0.8rem;
+  color: #94a3b8;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.source-link:hover {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+/* Divider & Bottom Area */
+.footer-divider {
+  height: 1px;
+  background: #f1f5f9;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.footer-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: center;
+}
+
+.disclaimer-text {
+  font-size: 0.75rem;
+  color: #94a3b8;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.copyright {
+  font-size: 0.75rem;
+  color: #cbd5e1;
+}
+
+/* --- MOBILE RESPONSIVE & FIXES --- */
 @media (max-width: 768px) {
-  .landing-hero {
-    padding: 80px 20px 60px 20px;
+  /* 1. Fix the Top Badge being hidden behind Navbar */
+  .landing-wrapper {
+    padding-top: 10rem !important; /* Pushes content down */
   }
 
-  .hero-title {
-    font-size: 2.8rem;
+  .hero-badge {
+    position: relative;
+    z-index: 50; /* Forces it on top of background patterns */
+    height: auto;
+    padding: 8px 16px;
+    text-align: left;
+    max-width: 90%;
+    font-size: 0.8rem;
+    align-items: flex-start; /* Aligns dot correctly if text wraps */
   }
 
-  .features-grid {
-    gap: 24px;
+  .ping-wrapper {
+    margin-top: 4px; /* Aligns dot with text */
+  }
+
+  /* 1. Space out the main sections */
+  .footer-top {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 3rem; /* Push the 'Credits' away from 'Brand' */
+  }
+
+  /* 2. Fix the Brand alignment */
+  .footer-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-brand p {
+    margin-top: 8px;
+    font-size: 0.95rem;
+    opacity: 0.8;
+  }
+
+  /* 3. Style the Right Side (Credits) */
+  .footer-links {
+    align-items: center;
+    width: 100%;
+    gap: 12px;
+  }
+
+  /* Make the badge stand out more */
+  .credit-badge {
+    width: auto;
+    font-size: 0.85rem;
+    padding: 10px 20px;
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);
+  }
+
+  /* Fix the Data Source link visibility */
+  .source-link {
+    font-size: 0.75rem;
+    color: #64748b; /* Darker gray for readability */
+    margin-top: 4px;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    opacity: 0.8;
+  }
+
+  /* 4. Fix the Bottom Disclaimer */
+  .footer-divider {
+    margin: 2rem 0;
+    opacity: 0.5;
+  }
+
+  .disclaimer-text {
+    text-align: center;
+    font-size: 0.75rem; /* Slightly larger */
+    line-height: 1.6;
+    color: #94a3b8; /* Darker than before */
+    padding: 0 10px; /* Prevent text hitting screen edges */
   }
 }

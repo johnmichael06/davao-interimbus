@@ -1,120 +1,206 @@
 import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
-import { Bus, Map, Clock } from "lucide-react";
-import "./LandingPage.css"; // Import the CSS file
+import {
+  Bus,
+  Map,
+  Clock,
+  ChevronRight,
+  Info,
+  Heart,
+  MapPin,
+} from "lucide-react";
+import "./LandingPage.css";
 
 export default function LandingPage() {
   return (
     <>
       <Navbar />
 
-      {/* Hero Section */}
-      <div className="container landing-hero">
-        <div className="hero-content">
-          <div className="hero-badge">
-            <span className="ping-wrapper">
-              <span className="ping-animation"></span>
-              <span className="ping-dot"></span>
-            </span>
-            Service Guide & Simulation
-          </div>
+      {/* --- HERO SECTION --- */}
+      <div className="landing-wrapper">
+        <div className="container landing-hero">
+          <div className="hero-content">
+            <div className="hero-badge">
+              <span className="ping-wrapper">
+                <span className="ping-animation"></span>
+                <span className="ping-dot"></span>
+              </span>
+              Interim Bus Service Guide & Simulation
+            </div>
 
-          <h1 className="hero-title">
-            Davao City <span className="highlight-text">Bus Routes</span>
-          </h1>
+            <h1 className="hero-title">
+              Davao Commutes <br />
+              <span className="highlight-text">Made Simple.</span>
+            </h1>
 
-          <p className="hero-subtitle">
-            Navigate the city with ease. View official interim bus schedules,
-            find stops near you, and simulate your daily commute.
-          </p>
+            <p className="hero-subtitle">
+              Don't guess where the bus stops. View official Interim Bus System
+              (IBS) routes, check dispatch schedules, and visualize your trip on
+              our interactive map.
+            </p>
 
-          <div className="hero-buttons">
-            <Link to="/routes" className="btn">
-              View All Routes
-            </Link>
-            <a href="#features" className="btn-outline">
-              How it Works
-            </a>
+            <div className="hero-buttons">
+              <Link to="/routes" className="btn btn-primary">
+                Find My Bus
+                <ChevronRight size={20} />
+              </Link>
+              <a href="#how-it-works" className="btn-text">
+                How it works
+              </a>
+            </div>
+
+            {/* Trust Indicators */}
+            <div className="hero-stats">
+              <div className="stat-item">
+                <strong>100%</strong> Free
+              </div>
+              <div className="stat-separator"></div>
+              <div className="stat-item">
+                <strong>No</strong> App Download
+              </div>
+              <div className="stat-separator"></div>
+              <div className="stat-item">
+                <strong>Student</strong> Project
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
-      {/* Features Cards */}
-      <div id="features" className="container features-container">
-        <div className="features-grid">
-          {/* Card 1 */}
-          <div className="card-panel feature-card">
-            {/* Added 'feature-icon' class for hover animation */}
-            <div className="feature-icon">
-              <Bus size={28} />
-            </div>
-            <h3>Official Routes</h3>
-            <p>
-              Access detailed path data for all interim bus routes (R102, R103,
-              R402) directly from official sources.
-            </p>
+      {/* --- LIVE ROUTES TICKER --- */}
+      <section className="section-routes">
+        <div className="container">
+          <div className="routes-header">
+            <span className="routes-label">Supported Routes:</span>
           </div>
-
-          {/* Card 2 */}
-          <div className="card-panel feature-card">
-            <div className="feature-icon">
-              <Clock size={28} />
+          <div className="routes-grid">
+            <div className="route-badge">
+              <span className="route-id">R102</span>
+              <span className="route-name">Catalunan Grande</span>
             </div>
-            <h3>Accurate Schedules</h3>
-            <p>
-              Check AM and PM departure times to plan your trip ahead and avoid
-              long waiting times.
-            </p>
-          </div>
-
-          {/* Card 3 */}
-          <div className="card-panel feature-card">
-            <div className="feature-icon">
-              <Map size={28} />
+            <div className="route-badge">
+              <span className="route-id">R103</span>
+              <span className="route-name">Toril Loop</span>
             </div>
-            <h3>Trip Simulation</h3>
-            <p>
-              Visualize the bus journey on an interactive map. Watch the bus
-              move from stop to stop in real-time.
-            </p>
+            <div className="route-badge">
+              <span className="route-id">R402</span>
+              <span className="route-name">Bunawan via Buhangin</span>
+            </div>
+            <div className="route-badge pending">
+              <span className="route-id">...</span>
+              <span className="route-name">More coming soon</span>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      {/* footer */}
+      {/* --- FEATURES "BENTO" GRID --- */}
+      <section id="how-it-works" className="section-features">
+        <div className="container">
+          <div className="section-title">
+            <h2>Everything you need to ride.</h2>
+          </div>
+
+          <div className="features-bento">
+            {/* Main Feature - Large Box */}
+            <div className="bento-box large-box">
+              <div className="bento-icon-bg">
+                <Map size={40} />
+              </div>
+              <h3>Interactive Trip Simulation</h3>
+              <p>
+                Not sure where the bus turns? Watch a real-time simulation of
+                the bus moving along the map to understand the exact path before
+                you even leave your house.
+              </p>
+            </div>
+
+            {/* Sub Feature 1 */}
+            <div className="bento-box">
+              <div className="feature-icon-small">
+                <Clock size={24} />
+              </div>
+              <h3>Dispatch Schedules</h3>
+              <p>
+                Check AM/PM departure times so you don't wait at the stop for
+                hours.
+              </p>
+            </div>
+
+            {/* Sub Feature 2 */}
+            <div className="bento-box">
+              <div className="feature-icon-small">
+                <Bus size={24} />
+              </div>
+              <h3>Official Stops</h3>
+              <p>
+                Data sourced directly from CTTMO and City Government official
+                releases.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* --- ABOUT THE DEVELOPER --- */}
+      <section className="section-about">
+        <div className="container">
+          <div className="about-card">
+            <div className="about-content">
+              <div className="about-tag">
+                <Info size={16} /> About the Project
+              </div>
+              <h2>Built for Davaoeños, by a Student.</h2>
+              <p>
+                Hi! I'm <strong>John Michael Rivera</strong>, an IT student at
+                Ateneo de Davao. I built this website to help fellow students
+                and workers navigate the new bus system. It's a personal
+                initiative to support our city's modernization efforts.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* --- FOOTER --- */}
       <footer className="landing-footer">
-        <p>
-          Made by <strong>John Michael F. Rivera</strong>.
-        </p>
-        <span className="attribution-link">
-          Bus Data Source:{" "}
-          <a
-            href="https://github.com/ttg-eng/routes"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            TTG Engineering (MIT License)
-          </a>
-        </span>
+        <div className="container">
+          <div className="footer-top">
+            {/* Left Side: Brand & Tagline */}
+            <div className="footer-brand">
+              <div className="brand-logo">
+                <span className="brand-dot"></span> DavaoBus
+              </div>
+              <p>Helping Davaoeños navigate the city safely.</p>
+            </div>
 
-        {/* The Disclaimer Section */}
-        <div
-          style={{
-            marginTop: "20px",
-            paddingTop: "20px",
-            borderTop: "1px solid rgba(0,0,0,0.05)",
-            fontSize: "0.75rem",
-            lineHeight: "1.5",
-            opacity: 0.7,
-          }}
-        >
-          <p>
-            <strong>Disclaimer:</strong> This is an unofficial, student-led
-            project for community assistance. Route data is based on public
-            records and may vary. Always refer to official government
-            announcements for critical travel updates. Not affiliated with Davao
-            City Government.
-          </p>
+            {/* Right Side: Credits & Data */}
+            <div className="footer-links">
+              <div className="credit-badge">
+                Made by
+                <strong>John Michael Rivera</strong>
+              </div>
+              <a
+                href="https://github.com/ttg-eng/routes"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="source-link"
+              >
+                Data Source: TTG Engineering (MIT)
+              </a>
+            </div>
+          </div>
+
+          <div className="footer-divider"></div>
+
+          <div className="footer-bottom">
+            <p className="disclaimer-text">
+              <strong>Disclaimer:</strong> This is an unofficial, student-led
+              project and is not affiliated with the Davao City Government.
+              Route data is based on public records and may be subject to
+              change.
+            </p>
+          </div>
         </div>
       </footer>
     </>
