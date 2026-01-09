@@ -153,9 +153,9 @@ export default function LandingPage() {
               <h2>Built for Davaoeños, by a Student.</h2>
               <p>
                 Hi! I'm <strong>John Michael Rivera</strong>, an IT student at
-                Ateneo de Davao. I built this website to help fellow students
-                and workers navigate the new bus system. It's a personal
-                initiative to support our city's modernization efforts.
+                Ateneo de Davao University. I built this website to help fellow
+                students and workers navigate the new bus system. It's a
+                personal initiative to support our city's modernization efforts.
               </p>
             </div>
           </div>
