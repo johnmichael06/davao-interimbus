@@ -71,7 +71,7 @@ export default function LandingPage() {
 
               <div className="route-badge">
                 <span className="route-id">R402</span>
-                <span className="route-name">Bunawan via Buhangin</span>
+                <span className="route-name">Mintal - Torres</span>
               </div>
 
               <div className="route-badge pending">
