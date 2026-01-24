@@ -61,12 +61,12 @@ export default function LandingPage() {
             <div className="routes-grid">
               <div className="route-badge">
                 <span className="route-id">R102</span>
-                <span className="route-name">Catalunan Grande</span>
+                <span className="route-name">Toril - Torres</span>
               </div>
 
               <div className="route-badge">
                 <span className="route-id">R103</span>
-                <span className="route-name">Toril Loop</span>
+                <span className="route-name">Toril - Roxas</span>
               </div>
 
               <div className="route-badge">
