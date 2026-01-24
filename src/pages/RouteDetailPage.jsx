@@ -54,12 +54,6 @@ export default function RouteDetailPage() {
         <div className="route-header" style={{ backgroundColor: route.color }}>
           <div className="header-top-row">
             <span className="route-badge">ROUTE {route.route_number}</span>
-
-            {/* clock */}
-            <div className="live-clock-badge">
-              <div className="pulse-dot"></div>
-              {timeString}
-            </div>
           </div>
 
           <h1 className="route-title">{route.name}</h1>

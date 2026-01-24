@@ -1,56 +1,49 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap");
 
 :root {
-  --primary: #0fa4a9;
-  --primary-dark: #0a7e82;
+  /* --- BRAND PALETTE --- */
+  --primary: #0fa4a9; /* Brand Teal */
+  --primary-dark: #0a7e82; /* Darker Teal for Hovers */
+  --primary-light: #e0f2f1; /* Light Teal Background */
+
+  /* --- NEUTRALS --- */
   --secondary: #ffffff;
-  --bg-light: #f0f9fa;
-  --text-main: #1e293b;
-  --text-muted: #64748b;
-  --radius: 20px;
-  --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
-    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --bg-light: #f8fafc;
+  --text-main: #0f172a; /* Deep Slate */
+  --text-muted: #64748b; /* Readable Slate Gray */
+  --bg-dots: #cbd5e1; /* Dot Pattern */
+
+  /* --- UI TOKENS --- */
+  --radius: 24px;
+  --shadow:
+    0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+  --shadow-hover:
+    0 20px 25px -5px rgba(15, 164, 169, 0.15),
+    0 8px 10px -6px rgba(15, 164, 169, 0.1);
 }
 
+/* --- RESET & DEFAULTS --- */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Inter", sans-serif;
   color: var(--text-main);
   line-height: 1.6;
-
-  background-color: var(--bg-light);
-  background-image: radial-gradient(
-    rgba(15, 164, 169, 0.15) 1px,
-    transparent 1px
-  );
-  background-size: 24px 24px;
-
+  background-color: #ffffff; /* Solid White Base */
   min-height: 100vh;
   position: relative;
+  overflow-x: hidden;
 }
 
-/* 2. glow thing  */
-body::before {
-  content: "";
-  position: fixed;
-  top: -100px;
-  left: -100px;
-  width: 600px;
-  height: 600px;
-  background: radial-gradient(
-    circle,
-    rgba(15, 164, 169, 0.15) 0%,
-    rgba(255, 255, 255, 0) 70%
-  );
-  z-index: -1;
-  pointer-events: none;
-}
-
+/* Typography */
 h1,
 h2,
 h3,
@@ -58,29 +51,34 @@ h4,
 h5 {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
+  color: var(--text-main);
 }
+
 a {
   text-decoration: none;
   color: inherit;
+  transition: color 0.2s ease;
 }
 
-/* --- responsiveness --- */
-
+/* --- LAYOUT UTILITIES --- */
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 1.5rem;
 }
 
 @media (max-width: 768px) {
   .container {
-    padding: 0 15px;
+    padding: 0 1.25rem;
   }
 }
 
-/* --- for the buttons --- */
+/* --- BUTTONS --- */
 .btn {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
   padding: 12px 28px;
   background-color: var(--primary);
   color: white;
@@ -88,9 +86,10 @@ a {
   font-weight: 600;
   border: none;
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0 4px 12px rgba(15, 164, 169, 0.3);
 }
+
 .btn:hover {
   background-color: var(--primary-dark);
   transform: translateY(-2px);
@@ -107,49 +106,33 @@ a {
   cursor: pointer;
   transition: all 0.2s ease;
 }
+
 .btn-outline:hover {
   background-color: var(--primary);
   color: white;
 }
 
-/* --- global cards and panel --- */
+/* --- GLOBAL CARD PANELS (FIXED) --- */
+/* Deleted the code that made text white and bg teal */
 .card-panel {
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(5px);
+  background: white;
   border-radius: var(--radius);
   box-shadow: var(--shadow);
-  border: 1px solid rgba(255, 255, 255, 0.5);
-
-  /* transition para sa hover */
-  transition: all 0.3s ease;
+  border: 1px solid #e2e8f0;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
 }
 
-/* --- hever eeffects  --- */
+/* Modern Hover Effect: Lift + Border Highlight + Shadow */
 .card-panel:hover {
-  background-color: var(--primary);
-  transform: translateY(-8px);
+  transform: translateY(-5px);
   border-color: var(--primary);
-  box-shadow: 0 20px 25px -5px rgba(15, 164, 169, 0.4),
-    0 10px 10px -5px rgba(15, 164, 169, 0.2);
+  box-shadow: var(--shadow-hover);
+  /* No color changes to text or background */
 }
 
-/* chnge text color on hover */
-.card-panel:hover h3 {
-  color: white !important;
-}
-
-.card-panel:hover p {
-  color: rgba(255, 255, 255, 0.9) !important;
-}
-
-/* icon anim hover*/
-.card-panel:hover .feature-icon {
-  background-color: white !important;
-  color: var(--primary) !important;
-  transform: scale(1.1) rotate(5deg);
-}
-
-/* --- route detail layout --- */
+/* --- ROUTE DETAIL LAYOUT --- */
 .route-detail-grid {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -164,20 +147,29 @@ a {
   border-radius: 24px;
   box-shadow: var(--shadow);
   overflow: hidden;
-  border: 4px solid white;
+  border: 1px solid #e2e8f0;
+  background: #f1f5f9;
 }
 
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+/* --- RESPONSIVENESS --- */
 @media (max-width: 900px) {
   .route-detail-grid {
     display: flex;
     flex-direction: column-reverse;
   }
+
   .map-sticky-container {
     height: 450px;
     width: 100%;
     position: relative;
     top: 0;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
   }
 }
 
@@ -185,13 +177,4 @@ a {
   h1 {
     font-size: 1.8rem !important;
   }
-  .route-header {
-    padding: 24px !important;
-  }
-}
-
-.leaflet-container {
-  width: 100%;
-  height: 100%;
-  z-index: 1;
 }

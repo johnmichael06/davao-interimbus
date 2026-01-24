@@ -1,14 +1,6 @@
 import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
-import {
-  Bus,
-  Map,
-  Clock,
-  ChevronRight,
-  Info,
-  Heart,
-  MapPin,
-} from "lucide-react";
+import { Bus, Map, Clock, ChevronRight, Info } from "lucide-react";
 import "./LandingPage.css";
 
 export default function LandingPage() {
@@ -20,13 +12,7 @@ export default function LandingPage() {
       <div className="landing-wrapper">
         <div className="container landing-hero">
           <div className="hero-content">
-            <div className="hero-badge">
-              <span className="ping-wrapper">
-                <span className="ping-animation"></span>
-                <span className="ping-dot"></span>
-              </span>
-              Interim Bus Service Guide & Simulation
-            </div>
+            {/* Status Pill */}
 
             <h1 className="hero-title">
               Davao Commutes <br />
@@ -42,9 +28,9 @@ export default function LandingPage() {
             <div className="hero-buttons">
               <Link to="/routes" className="btn btn-primary">
                 Find My Bus
-                <ChevronRight size={20} />
+                <ChevronRight size={20} strokeWidth={2.5} />
               </Link>
-              <a href="#how-it-works" className="btn-text">
+              <a href="#how-it-works" className="btn btn-text">
                 How it works
               </a>
             </div>
@@ -67,28 +53,31 @@ export default function LandingPage() {
         </div>
       </div>
 
-      {/* --- LIVE ROUTES TICKER --- */}
+      {/* --- LIVE ROUTES TICKER (Overlapping Card) --- */}
       <section className="section-routes">
         <div className="container">
-          <div className="routes-header">
-            <span className="routes-label">Supported Routes:</span>
-          </div>
-          <div className="routes-grid">
-            <div className="route-badge">
-              <span className="route-id">R102</span>
-              <span className="route-name">Catalunan Grande</span>
-            </div>
-            <div className="route-badge">
-              <span className="route-id">R103</span>
-              <span className="route-name">Toril Loop</span>
-            </div>
-            <div className="route-badge">
-              <span className="route-id">R402</span>
-              <span className="route-name">Bunawan via Buhangin</span>
-            </div>
-            <div className="route-badge pending">
-              <span className="route-id">...</span>
-              <span className="route-name">More coming soon</span>
+          <div className="routes-card-wrapper">
+            <span className="routes-label">Supported Routes</span>
+            <div className="routes-grid">
+              <div className="route-badge">
+                <span className="route-id">R102</span>
+                <span className="route-name">Catalunan Grande</span>
+              </div>
+
+              <div className="route-badge">
+                <span className="route-id">R103</span>
+                <span className="route-name">Toril Loop</span>
+              </div>
+
+              <div className="route-badge">
+                <span className="route-id">R402</span>
+                <span className="route-name">Bunawan via Buhangin</span>
+              </div>
+
+              <div className="route-badge pending">
+                <span className="route-id">...</span>
+                <span className="route-name">More coming soon</span>
+              </div>
             </div>
           </div>
         </div>
@@ -105,7 +94,7 @@ export default function LandingPage() {
             {/* Main Feature - Large Box */}
             <div className="bento-box large-box">
               <div className="bento-icon-bg">
-                <Map size={40} />
+                <Map size={32} strokeWidth={2} />
               </div>
               <h3>Interactive Trip Simulation</h3>
               <p>
@@ -118,7 +107,7 @@ export default function LandingPage() {
             {/* Sub Feature 1 */}
             <div className="bento-box">
               <div className="feature-icon-small">
-                <Clock size={24} />
+                <Clock size={28} strokeWidth={2} />
               </div>
               <h3>Dispatch Schedules</h3>
               <p>
@@ -130,7 +119,7 @@ export default function LandingPage() {
             {/* Sub Feature 2 */}
             <div className="bento-box">
               <div className="feature-icon-small">
-                <Bus size={24} />
+                <Bus size={28} strokeWidth={2} />
               </div>
               <h3>Official Stops</h3>
               <p>
@@ -148,9 +137,9 @@ export default function LandingPage() {
           <div className="about-card">
             <div className="about-content">
               <div className="about-tag">
-                <Info size={16} /> About the Project
+                <Info size={14} /> About the Project
               </div>
-              <h2>Built for Davaoeños, by a Student.</h2>
+              <h2>Built for Davaoeños</h2>
               <p>
                 Hi! I'm <strong>John Michael Rivera</strong>, an IT student at
                 Ateneo de Davao University. I built this website to help fellow
@@ -177,8 +166,7 @@ export default function LandingPage() {
             {/* Right Side: Credits & Data */}
             <div className="footer-links">
               <div className="credit-badge">
-                Made by
-                <strong>John Michael Rivera</strong>
+                Made by <strong>John Michael Rivera</strong>
               </div>
               <a
                 href="https://github.com/ttg-eng/routes"

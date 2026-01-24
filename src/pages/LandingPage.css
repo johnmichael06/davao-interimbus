@@ -1,66 +1,104 @@
-/* --- GLOBAL RESET & VARS --- */
+/* --- 1. GLOBAL VARIABLES & UTILITIES --- */
+:root {
+  --primary: #0fa4a9; /* Brand Teal */
+  --primary-dark: #0d8c91; /* Darker Teal for Hovers */
+  --primary-light: #e0f2f1; /* Light Teal Background */
+  --text-main: #0f172a; /* Deep Slate */
+  --text-muted: #64748b; /* Readable Slate Gray */
+  --bg-dots: #cbd5e1; /* Dot Pattern Color */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg:
+    0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 .container {
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 1.5rem;
 }
 
-/* --- HERO SECTION --- */
-/* --- UPDATED HERO SECTION WITH PATTERN --- */
+/* --- 2. HERO SECTION --- */
 .landing-wrapper {
-  padding: 5rem 0 10rem;
+  position: relative;
+  /* Reduced bottom padding slightly to pull content up */
+  padding: 6rem 0 10rem;
   background-color: #ffffff;
-  /* Lighter color for dots (rgba with low opacity) */
-  background-image: radial-gradient(#cbd5e1 1.5px, transparent 1.5px);
-  background-size: 30px 30px; /* Smaller grid */
-  /* Stronger mask to fade edges */
-  mask-image: radial-gradient(circle at center, black 40%, transparent 100%);
-  -webkit-mask-image: radial-gradient(
-    circle at center,
-    black 40%,
-    transparent 100%
-  );
+  overflow: hidden;
 }
 
-/* Ensure content sits on top */
+.landing-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(var(--bg-dots) 1px, transparent 1px);
+  background-size: 32px 32px;
+  mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+  z-index: 1;
+  pointer-events: none;
+}
+
 .landing-hero {
   position: relative;
   z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .hero-content {
   text-align: center;
-  max-width: 800px;
-  margin: 0 auto;
+  max-width: 780px;
+  width: 100%;
 }
 
+/* Status Badge */
 .hero-badge {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
   background: white;
-  border: 1px solid #e0f2f1;
+  border: 1px solid var(--primary-light);
   padding: 8px 20px;
-  border-radius: 100px;
-  font-size: 0.875rem;
-  font-weight: 600;
-  color: var(--text-main);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--primary);
+  box-shadow: var(--shadow-sm);
   margin-bottom: 2rem;
+  transition: transform 0.2s ease;
+  white-space: nowrap; /* Prevents awkward breaking on small screens */
+  max-width: 100%;
+  overflow-x: auto; /* Allows scroll if screen is TINY */
 }
 
+.hero-badge:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+
+/* Ping Animation */
 .ping-wrapper {
   position: relative;
   display: flex;
-  height: 10px;
   width: 10px;
+  height: 10px;
+  flex-shrink: 0; /* Prevents dot from squishing */
 }
 
 .ping-animation {
   position: absolute;
-  display: inline-flex;
-  height: 100%;
   width: 100%;
+  height: 100%;
   border-radius: 50%;
   background-color: var(--primary);
   opacity: 0.75;
@@ -69,150 +107,159 @@
 
 .ping-dot {
   position: relative;
-  display: inline-flex;
-  border-radius: 50%;
-  height: 10px;
   width: 10px;
+  height: 10px;
+  border-radius: 50%;
   background-color: var(--primary);
 }
 
 @keyframes ping {
   75%,
   100% {
-    transform: scale(2);
+    transform: scale(2.5);
     opacity: 0;
   }
 }
 
+/* Typography */
 .hero-title {
-  font-size: 3.5rem;
+  font-size: clamp(2.5rem, 5vw, 4.5rem); /* Adjusted minimum clamp */
   font-weight: 800;
   line-height: 1.1;
   color: var(--text-main);
+  letter-spacing: -0.03em;
   margin-bottom: 1.5rem;
 }
 
 .highlight-text {
-  /* Remove the background box */
-  background: none;
-  /* Make the text pop with your brand color */
   color: var(--primary);
-  /* Optional: Add a subtle text shadow for depth */
-  text-shadow: 0px 2px 10px rgba(15, 164, 169, 0.15);
+  position: relative;
+  display: inline-block;
+  text-shadow: 0 4px 20px rgba(15, 164, 169, 0.2);
 }
 
 .hero-subtitle {
-  font-size: 1.125rem;
-  /* Make this darker so it's easier to read */
+  font-size: 1.25rem;
   color: #475569;
   line-height: 1.6;
-  margin-bottom: 2.5rem;
+  margin-bottom: 3rem;
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
 }
 
+/* Buttons */
 .hero-buttons {
   display: flex;
+  align-items: center;
   justify-content: center;
-  gap: 1rem;
-  margin-bottom: 3rem;
-  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 4rem;
+  flex-wrap: wrap; /* Allows stacking on mobile */
 }
 
 .btn {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 8px;
-  padding: 14px 28px;
-  border-radius: 12px;
-  font-weight: 600;
-  transition: all 0.2s;
-  text-decoration: none;
+  padding: 16px 32px;
+  border-radius: 14px;
+  font-weight: 700;
   font-size: 1rem;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: none;
 }
 
 .btn-primary {
   background-color: var(--primary);
   color: white;
-  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.1);
+  border: none;
+  box-shadow: 0 10px 20px -10px rgba(15, 164, 169, 0.5);
 }
 
 .btn-primary:hover {
+  background-color: var(--primary-dark);
   transform: translateY(-2px);
-  filter: brightness(110%);
-  box-shadow: 0 15px 25px -5px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 20px 25px -10px rgba(15, 164, 169, 0.6);
 }
 
 .btn-text {
-  padding: 14px 28px;
-  /* Darker gray for visibility */
-  color: #64748b;
+  color: var(--text-muted);
   font-weight: 600;
-  text-decoration: none;
-  transition: color 0.2s;
 }
 
 .btn-text:hover {
-  color: var(--primary); /* Teal on hover */
+  color: var(--text-main);
 }
 
+/* --- TRUST STATS --- */
 .hero-stats {
   display: flex;
-  justify-content: center;
   align-items: center;
-  gap: 1.5rem;
-  font-size: 0.875rem;
-  /* Make stats darker and remove opacity */
-  color: #64748b;
+  justify-content: center; /* Center content */
+  gap: 2.5rem;
+  padding: 1.2rem 3rem;
+  background: white;
+  border-radius: 100px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.08);
+  flex-wrap: wrap; /* Important for responsiveness */
+}
+
+.stat-item {
+  font-size: 0.95rem;
+  color: #334155;
   font-weight: 500;
-  opacity: 1; /* Fixes the "invisible" text */
-  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.stat-item strong {
+  color: var(--primary);
+  font-weight: 800;
 }
 
 .stat-separator {
   width: 1px;
-  height: 16px;
+  height: 24px;
   background-color: #cbd5e1;
 }
 
-/* --- UPDATED ROUTES CARD (Overlapping Style) --- */
+/* --- 3. LIVE ROUTES OVERLAP --- */
 .section-routes {
-  /* 1. The Overlap Trick: Pull it up! */
-  margin-top: -60px;
+  margin-top: -80px; /* Reduced negative margin slightly */
   position: relative;
-  z-index: 20; /* Sit on top of the hero */
+  z-index: 20;
+  padding-bottom: 2rem;
+  background: transparent !important;
+  background-color: transparent !important;
+  border: none !important;
+  pointer-events: none;
+}
 
-  /* 2. Center and Size */
+.routes-card-wrapper {
+  pointer-events: auto;
   max-width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 4rem; /* Space below the card */
-
-  /* 3. The "Card" Look */
-  background-color: #e0f2f1; /* Your Brand Teal/Green */
-  padding: 2.5rem 2rem;
+  margin: 0 auto;
+  background: white;
+  padding: 2.5rem;
   border-radius: 24px;
-
-  /* 4. Deep Shadow to separate it from the background */
-  box-shadow: 0 20px 40px -10px rgba(15, 164, 169, 0.2);
-  border: 1px solid rgba(255, 255, 255, 0.6); /* Subtle border highlight */
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 20px 40px -10px rgba(15, 164, 169, 0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
 }
 
-/* Ensure the inner container doesn't add extra padding */
-.section-routes .container {
-  padding: 0;
-}
-
-.routes-header {
-  text-align: center;
-  margin-bottom: 1.5rem;
-  font-size: 0.85rem;
+.routes-label {
+  font-size: 0.8rem;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: var(--primary); /* Darker Teal text */
-  opacity: 0.8;
+  color: var(--primary);
 }
 
 .routes-grid {
@@ -225,67 +272,58 @@
 .route-badge {
   display: flex;
   align-items: center;
-  gap: 12px;
-  background: white;
-  padding: 10px 20px;
-  border-radius: 14px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+  gap: 10px;
+  padding: 8px 16px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
   transition: all 0.2s ease;
-  border: 1px solid rgba(255, 255, 255, 0.5);
-}
-
-.route-badge:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(15, 164, 169, 0.15);
-  border-color: var(--primary);
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .route-id {
   background: var(--primary);
   color: white;
+  font-size: 0.75rem;
   font-weight: 800;
-  font-size: 0.85rem;
-  padding: 4px 10px;
+  padding: 4px 8px;
   border-radius: 6px;
 }
 
 .route-name {
+  font-size: 0.9rem;
   font-weight: 600;
-  font-size: 0.95rem;
   color: var(--text-main);
 }
 
-/* Dashed style for 'Coming Soon' */
 .route-badge.pending {
-  background: rgba(255, 255, 255, 0.5);
-  border: 2px dashed #b2dfdb;
-  box-shadow: none;
-  opacity: 0.7;
+  border-style: dashed;
+  opacity: 0.6;
+  cursor: default;
 }
 
-/* --- BENTO GRID FEATURES --- */
+/* --- 4. BENTO GRID FEATURES --- */
 .section-features {
-  padding: 6rem 0;
-  /* Soft background color */
-  background-color: #fafafa;
-  /* Subtle "noise" or diagonal lines can go here, but a soft gradient is cleaner */
-  background: radial-gradient(
-      circle at top left,
-      rgba(224, 242, 241, 0.4) 0%,
-      transparent 40%
-    ),
-    radial-gradient(
-      circle at bottom right,
-      rgba(224, 242, 241, 0.4) 0%,
-      transparent 40%
-    );
+  padding: 8rem 0;
+  background-color: #f8fafc !important;
+  background-image:
+    linear-gradient(rgba(15, 164, 169, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(15, 164, 169, 0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+  position: relative;
+  z-index: 5;
+  border-top: 1px solid #f1f5f9;
 }
 
 .section-title h2 {
   text-align: center;
-  font-size: 2rem;
-  margin-bottom: 3rem;
-  color: var(--text-main);
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 4rem;
+  color: #0f172a;
+  letter-spacing: -0.02em;
+  padding: 0 1rem; /* Prevent edge touching on mobile */
 }
 
 .features-bento {
@@ -296,7 +334,7 @@
 
 @media (min-width: 768px) {
   .features-bento {
-    grid-template-columns: 1.5fr 1fr;
+    grid-template-columns: 1.6fr 1fr;
     grid-template-rows: auto auto;
   }
   .large-box {
@@ -306,197 +344,201 @@
 
 .bento-box {
   background: white;
-  padding: 2.5rem;
-  border-radius: 24px;
+  padding: 3rem;
+  border-radius: 28px;
   border: 1px solid #e2e8f0;
-  transition: all 0.3s ease;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02);
+  position: relative;
+  overflow: hidden;
 }
 
 .bento-box:hover {
   border-color: var(--primary);
-  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.05);
+  box-shadow:
+    0 20px 25px -5px rgba(15, 164, 169, 0.1),
+    0 8px 10px -6px rgba(15, 164, 169, 0.05);
+  transform: translateY(-4px);
 }
 
-.bento-icon-bg {
-  color: var(--primary);
-  background: #e0f2f1;
-  width: fit-content;
-  padding: 1rem;
-  border-radius: 16px;
-  margin-bottom: 1.5rem;
-}
-
+.bento-icon-bg,
 .feature-icon-small {
   color: var(--primary);
-  background: #e0f2f1;
-  width: 48px;
-  height: 48px;
+  background: var(--primary-light);
+  width: 64px;
+  height: 64px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 12px;
-  margin-bottom: 1rem;
+  border-radius: 18px;
+  margin-bottom: 2rem;
 }
 
 .bento-box h3 {
-  font-size: 1.35rem;
-  font-weight: 700;
-  margin: 0 0 0.75rem;
-  color: var(--text-main);
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin: 0 0 1rem;
+  color: #0f172a;
+  letter-spacing: -0.01em;
 }
 
 .bento-box p {
-  color: var(--text-muted);
-  line-height: 1.6;
-  font-size: 1rem;
+  color: #475569;
+  line-height: 1.7;
+  font-size: 1.05rem;
 }
 
-/* --- UPDATED ABOUT SECTION (Matches Branding) --- */
+/* --- 5. ABOUT THE PROJECT --- */
 .section-about {
-  padding: 4rem 0 6rem;
-  background: white;
+  padding: 12rem 0;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 10;
 }
 
-/* --- UPDATED ABOUT CARD WITH GRID PATTERN --- */
 .about-card {
-  /* Keep the gradient */
-  background: linear-gradient(135deg, #ffffff 0%, #f0fdfa 100%);
-  border: 1px solid #b2dfdb;
-  border-radius: 32px;
-  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+  border: 1px solid #e2e8f0;
+  border-radius: 40px;
+  padding: 5rem 4rem;
+  width: 100%;
+  max-width: 850px;
   text-align: center;
   position: relative;
   overflow: hidden;
-  box-shadow: 0 20px 40px -15px rgba(0, 150, 136, 0.15);
-
-  /* ADD THIS: Graph Paper Grid Effect */
-  background-image: linear-gradient(
-      rgba(15, 164, 169, 0.05) 1px,
-      transparent 1px
-    ),
-    linear-gradient(90deg, rgba(15, 164, 169, 0.05) 1px, transparent 1px);
-  background-size: 30px 30px; /* Size of the grid squares */
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.03);
+  background-image:
+    linear-gradient(rgba(15, 164, 169, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(15, 164, 169, 0.04) 1px, transparent 1px);
+  background-size: 30px 30px;
 }
 
-/* Optional: Add a subtle decorative circle behind */
-.about-card::before {
-  content: "";
-  position: absolute;
-  top: -50px;
-  right: -50px;
-  width: 200px;
-  height: 200px;
-  background: var(--primary);
-  opacity: 0.05;
-  border-radius: 50%;
-  pointer-events: none;
+.about-content {
+  position: relative;
+  z-index: 2;
+  max-width: 650px;
+  margin: 0 auto;
 }
 
 .about-tag {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  /* Match the Hero Badge style */
   background: white;
-  border: 1px solid #b2dfdb;
+  border: 1px solid var(--primary-light);
   color: var(--primary);
-  padding: 8px 16px;
-  border-radius: 100px;
-  font-size: 0.85rem;
-  font-weight: 600;
+  padding: 8px 18px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
   margin-bottom: 2rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
 }
 
 .about-content h2 {
-  font-size: 2.5rem;
-  margin-bottom: 1.5rem;
+  font-size: 2.75rem;
   font-weight: 800;
-  /* Change text to dark since background is light */
-  color: var(--text-main);
-  letter-spacing: -0.02em;
+  color: #0f172a;
+  letter-spacing: -0.04em;
+  margin-bottom: 1.5rem;
+  line-height: 1.1;
 }
 
 .about-content p {
-  /* Use your muted text variable */
-  color: var(--text-muted);
-  max-width: 600px;
-  margin: 0 auto 1rem; /* Reduced bottom margin */
+  color: #475569;
   line-height: 1.8;
-  font-size: 1.1rem;
+  font-size: 1.15rem;
+  margin-bottom: 0;
 }
-/* --- FOOTER FIX --- */
+
+.about-content strong {
+  color: var(--text-main);
+  font-weight: 700;
+  position: relative;
+  z-index: 1;
+}
+
+.about-content strong::after {
+  content: "";
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background: var(--primary-light);
+  z-index: -1;
+  opacity: 0.5;
+}
+
+/* --- 6. FOOTER --- */
 .landing-footer {
-  background-color: #ffffff;
   border-top: 1px solid #f1f5f9;
   padding: 4rem 0 2rem;
-  margin-top: auto; /* Ensures it sits at bottom */
+  background: white;
 }
 
 .footer-top {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 2rem;
+  margin-bottom: 3rem;
   flex-wrap: wrap;
-  margin-bottom: 2rem;
+  gap: 2rem;
 }
 
-/* Brand Styling */
 .brand-logo {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 800;
   color: var(--text-main);
   display: flex;
   align-items: center;
   gap: 8px;
   margin-bottom: 0.5rem;
-  letter-spacing: -0.02em;
 }
 
 .brand-dot {
   width: 10px;
   height: 10px;
-  background-color: var(--primary);
+  background: var(--primary);
   border-radius: 50%;
-  display: inline-block;
 }
 
 .footer-brand p {
-  color: #64748b;
   font-size: 0.95rem;
-  max-width: 300px;
-  line-height: 1.5;
+  color: var(--text-muted);
 }
 
-/* Right Side Links */
 .footer-links {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end; /* Aligns to right */
-  gap: 12px;
+  text-align: right;
 }
 
 .credit-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
+  display: inline-block;
   background: #f8fafc;
   padding: 8px 16px;
-  border-radius: 50px;
+  border-radius: 99px;
   font-size: 0.85rem;
-  color: var(--text-main);
+  color: var(--text-muted);
   border: 1px solid #e2e8f0;
+  margin-bottom: 0.5rem;
+}
+
+.credit-badge strong {
+  color: var(--text-main);
 }
 
 .source-link {
-  font-size: 0.8rem;
-  color: #94a3b8;
+  font-size: 0.85rem;
+  color: var(--text-muted);
   text-decoration: none;
-  transition: color 0.2s;
+  display: block;
 }
 
 .source-link:hover {
@@ -504,115 +546,114 @@
   text-decoration: underline;
 }
 
-/* Divider & Bottom Area */
 .footer-divider {
   height: 1px;
   background: #f1f5f9;
   margin-bottom: 2rem;
-  width: 100%;
 }
 
 .footer-bottom {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
   text-align: center;
 }
 
 .disclaimer-text {
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   color: #94a3b8;
-  line-height: 1.6;
-  max-width: 800px;
+  max-width: 600px;
   margin: 0 auto;
+  line-height: 1.6;
 }
 
-.copyright {
-  font-size: 0.75rem;
-  color: #cbd5e1;
+/* --- RESPONSIVENESS (MOBILE & TABLET) --- */
+@media (max-width: 900px) {
+  /* Fix Card Padding on Tablets */
+  .about-card {
+    padding: 3rem 2rem;
+  }
 }
 
-/* --- MOBILE RESPONSIVE & FIXES --- */
 @media (max-width: 768px) {
-  /* 1. Fix the Top Badge being hidden behind Navbar */
+  /* Hero */
   .landing-wrapper {
-    padding-top: 10rem !important; /* Pushes content down */
+    padding: 4rem 0 6rem;
+  }
+  .hero-title {
+    font-size: 2.75rem;
+  }
+  .hero-subtitle {
+    font-size: 1.1rem;
   }
 
-  .hero-badge {
-    position: relative;
-    z-index: 50; /* Forces it on top of background patterns */
-    height: auto;
-    padding: 8px 16px;
-    text-align: left;
-    max-width: 90%;
-    font-size: 0.8rem;
-    align-items: flex-start; /* Aligns dot correctly if text wraps */
+  /* Buttons & Stats */
+  .hero-buttons {
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+  }
+  .btn {
+    width: 100%;
+  }
+  .hero-stats {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+    padding: 1.5rem;
+    border-radius: 24px;
+    width: 100%; /* Full width pill */
+  }
+  .stat-separator {
+    display: none;
   }
 
-  .ping-wrapper {
-    margin-top: 4px; /* Aligns dot with text */
+  /* Routes Overlap */
+  .section-routes {
+    margin-top: -40px;
+  }
+  .routes-card-wrapper {
+    padding: 1.5rem;
   }
 
-  /* 1. Space out the main sections */
+  /* Features */
+  .section-features {
+    padding: 4rem 0;
+  }
+  .section-title h2 {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+  }
+  .bento-box {
+    padding: 2rem;
+  }
+
+  /* About Section - Drastic Reduction */
+  .section-about {
+    padding: 4rem 0;
+  }
+  .about-card {
+    padding: 2.5rem 1.5rem;
+    border-radius: 24px;
+  }
+  .about-content h2 {
+    font-size: 2rem;
+  }
+
+  /* Footer */
   .footer-top {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: 3rem; /* Push the 'Credits' away from 'Brand' */
   }
-
-  /* 2. Fix the Brand alignment */
-  .footer-brand {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .footer-brand p {
-    margin-top: 8px;
-    font-size: 0.95rem;
-    opacity: 0.8;
-  }
-
-  /* 3. Style the Right Side (Credits) */
   .footer-links {
-    align-items: center;
-    width: 100%;
-    gap: 12px;
-  }
-
-  /* Make the badge stand out more */
-  .credit-badge {
-    width: auto;
-    font-size: 0.85rem;
-    padding: 10px 20px;
-    background-color: #f8fafc;
-    border: 1px solid #e2e8f0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);
-  }
-
-  /* Fix the Data Source link visibility */
-  .source-link {
-    font-size: 0.75rem;
-    color: #64748b; /* Darker gray for readability */
-    margin-top: 4px;
-    text-decoration: underline;
-    text-underline-offset: 4px;
-    opacity: 0.8;
-  }
-
-  /* 4. Fix the Bottom Disclaimer */
-  .footer-divider {
-    margin: 2rem 0;
-    opacity: 0.5;
-  }
-
-  .disclaimer-text {
     text-align: center;
-    font-size: 0.75rem; /* Slightly larger */
-    line-height: 1.6;
-    color: #94a3b8; /* Darker than before */
-    padding: 0 10px; /* Prevent text hitting screen edges */
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 2.25rem;
+  }
+  .route-badge {
+    width: 100%;
+    justify-content: center;
   }
 }

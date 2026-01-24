@@ -5,7 +5,7 @@
 const routeModules = import.meta.glob("../json_routes/*.json", { eager: true });
 
 console.log(
-  `[Davao Bus App] Found ${Object.keys(routeModules).length} JSON files.`
+  `[Davao Bus App] Found ${Object.keys(routeModules).length} JSON files.`,
 );
 
 // Helper: Convert 24h to 12h format
@@ -56,7 +56,7 @@ Object.keys(routeModules).forEach((path) => {
         route_number: data.route_number || "???",
         name: data.name || "Unknown Route",
         area: data.area || "Davao City",
-        color: data.color || "#0FA4A9", // Default Teal if missing
+        color: "#0FA4A9", // Default Teal if missing
         schedule: { am: [], pm: [] },
         points: [],
       };
@@ -93,7 +93,7 @@ Object.keys(routeModules).forEach((path) => {
 
 const finalRoutes = Object.values(processedRoutes);
 console.log(
-  `[Davao Bus App] Successfully loaded ${finalRoutes.length} unique routes.`
+  `[Davao Bus App] Successfully loaded ${finalRoutes.length} unique routes.`,
 );
 
 export const routesData = finalRoutes;
